@@ -10,12 +10,12 @@ Last Updated: August 12, 2020
  Table of Contents   Purpose and Introduction
   Basic DNC Overview
   Range of Actions and Abilities
-  Understanding Standard Step / How to do Dance Steps
+  Understanding Standard Step / How to Do Dance Steps
   Understanding Technical Step
   Understanding Fan Dance (and weaving oGCDs in general)
   Esprit Generation
  Improvisation    Understanding Flourish">
-<meta itemprop=wordCount content="18355">
+<meta itemprop=wordCount content="18340">
 <meta itemprop=keywords content><meta property="og:title" content="Comprehensive Guide for DNC in Shadowbringers">
 <meta property="og:description" content="By: Ringabel Dim of Excalibur
 Last Updated: August 12, 2020
@@ -23,7 +23,7 @@ Last Updated: August 12, 2020
  Table of Contents   Purpose and Introduction
   Basic DNC Overview
   Range of Actions and Abilities
-  Understanding Standard Step / How to do Dance Steps
+  Understanding Standard Step / How to Do Dance Steps
   Understanding Technical Step
   Understanding Fan Dance (and weaving oGCDs in general)
   Esprit Generation
@@ -38,7 +38,7 @@ Last Updated: August 12, 2020
  Table of Contents   Purpose and Introduction
   Basic DNC Overview
   Range of Actions and Abilities
-  Understanding Standard Step / How to do Dance Steps
+  Understanding Standard Step / How to Do Dance Steps
   Understanding Technical Step
   Understanding Fan Dance (and weaving oGCDs in general)
   Esprit Generation
@@ -90,7 +90,7 @@ Last Updated: August 12, 2020<br>
 <p><a href=#range-of-actions-and-abilities>Range of Actions and Abilities</a></p>
 </li>
 <li>
-<p><a href=#understanding-standard-step--how-to-do-dance-steps>Understanding Standard Step / How to do Dance Steps</a></p>
+<p><a href=#understanding-standard-step--how-to-do-dance-steps>Understanding Standard Step / How to Do Dance Steps</a></p>
 </li>
 <li>
 <p><a href=#understanding-technical-step>Understanding Technical Step</a></p>
@@ -111,7 +111,7 @@ Last Updated: August 12, 2020<br>
 <p><a href=#dnc-rotation>DNC “Rotation”</a></p>
 </li>
 <li>
-<p><a href=#general-single-target-gcd-priority-list>General Single Target GCD Priority List</a></p>
+<p><a href=#general-single-target-gcd-priority-list>General Single-Target GCD Priority List</a></p>
 </li>
 <li>
 <p><a href=#aoe-rotation>AoE Rotation</a></p>
@@ -131,7 +131,7 @@ Last Updated: August 12, 2020<br>
 <li><a href=#weapon-damage-and-dexterity>Weapon Damage and Dexterity</a></li>
 <li><a href=#crit-vs-det--dh>Crit vs Det/DH</a></li>
 <li><a href=#determination-vs-dh>Determination vs DH</a></li>
-<li><a href=#skill-speed-and-why-it-is-not-good-on-dnc>Skill Speed and Why it is Not Good on DNC</a></li>
+<li><a href=#skill-speed-and-why-it-is-not-good-on-dnc>Skill Speed and Why It Is Not Good on DNC</a></li>
 </ul>
 </li>
 <li>
@@ -169,17 +169,17 @@ Last Updated: August 12, 2020<br>
 </ul>
 <hr>
 <h1 id=purpose-and-introduction>Purpose and Introduction<a href=#purpose-and-introduction class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h1>
-<p>The purpose of this guide is to be a comprehensive gameplay guide for how to play and optimize the DNC rotation. This guide goes over the fundamentals and job basics while also looking into advanced tips and tricks that experienced players may not know. Due to the randomness of the proc, Feather, and Esprit generation, DNC has a dynamic playstyle where no two pulls are ever the same. Hopefully after reading this guide, you will have a better understanding of how to play DNC to its fullest.</p>
-<p>Ellunavi (moderator on <a href=https://discord.gg/CjQkEn3>The Balance - Discord server</a>) wrote an in depth <a href=https://docs.google.com/document/d/1iktjQ-kW7Vp-iWy_xEWh6t62FaXqjfGELGmcWOtPQfM/edit>analysis</a> at the beginning of Shadowbrings for DNC regarding the calculations which established the priorities for DNC GCD and oGCD usage. His work helps establish a basis to explain why certain recommendations in this guide are optimal depending on the situation.</p>
+<p>The purpose of this guide is to be a comprehensive gameplay guide for how to play and optimize the DNC rotation. This guide goes over the fundamentals and job basics while also looking into advanced tips and tricks that experienced players may not know. Due to the randomness of procs, Feathers, and Esprit generation, DNC has a dynamic playstyle where no two pulls are ever the same. Hopefully after reading this guide, you will have a better understanding of how to play DNC to its fullest.</p>
+<p>Ellunavi (moderator on <a href=https://discord.gg/CjQkEn3>The Balance - Discord server</a>) wrote an in-depth <a href=https://docs.google.com/document/d/1iktjQ-kW7Vp-iWy_xEWh6t62FaXqjfGELGmcWOtPQfM/edit>analysis</a> at the beginning of Shadowbringers for DNC regarding the calculations which established the priorities for DNC GCD and oGCD usage. His work helps establish a basis to explain why certain recommendations in this guide are optimal depending on the situation.</p>
 <p>Additionally, thanks to the hard work of the members of the <a href=http://allaganstudies.akhmorning.com/>Allagan Studies</a>, the damage formulas have been determined along with the stat tiers used to help support the rotational strategies that were found using math to find the best results and simulations to confirm them.</p>
 <p>Everything in this guide is free to be reposted or otherwise used freely! If you plan on referencing anything in this guide in your own published work, I only ask that you give proper credit and/or reference to this guide.</p>
 <hr>
 <h1 id=basic-dnc-overview>Basic DNC Overview<a href=#basic-dnc-overview class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h1>
 <p><a href=https://na.finalfantasyxiv.com/jobguide/dancer/>DNC Job Guide from Square Enix</a> (which includes job weaponskill and ability descriptions).</p>
 <h2 id=short-version>Short Version:<a href=#short-version class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
-<p>Dancer is a ranged physical DPS job with low personal DPS but high contribution to others’ DPS using raid buffs. It has “Dances'' that require executing the right dance steps in order to perform powerful finishing moves. Its main weaponskill GCDs revolve around a simple combo that has a chance to generate stronger proc GCDs which have a chance to generate Feathers which can be used for oGCD damage abilities.</p>
+<p>Dancer is a ranged physical DPS job with low personal DPS but high contribution to others’ DPS using raid buffs. It has “Dances'' that require executing the right dance steps in order to perform powerful finishing moves. Its main weaponskill GCDs revolve around a simple combo that has a chance to generate stronger proc GCDs, which have a chance to generate Feathers that can be used for oGCD damage abilities.</p>
 <h2 id=long-version>Long Version:<a href=#long-version class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
-<p>Dancer is a ranged physical DPS job (along with BRD and MCH) which has a pretty straightforward style to its gameplay. Their primary damage stat is dexterity (DEX). DNC is the DPS job that does the least amount of personal damage; however, it makes up for it by providing high damage increasing buffs to your raid group. Part of DNC’s rotation is keeping a buff up called Standard Finish that increases your damage by 5%. Additionally, DNC has two two minute cooldown abilities: Technical Step and Devilment. Technical Finish (which occurs after successfully completing the Technical Step dance) will provide a 5% damage up buff to the whole party for 20 seconds while Devilment provides the DNC with a 20% crit hit rate and 20% direct hit rate boost for 20 seconds. DNC can also choose someone to be their Dance Partner in a fight with the ability Closed Position which will duplicate the Standard Finish 5% damage up buff and the Devilment buff on this target party member. Additionally, DNC provides raid utility in the form of a small AoE heal called Curing Waltz and a party wide damage reduction ability called Shield Samba. Despite doing low personal damage overall, DNC offers incredibly powerful burst damage in a 20 second window every two minutes with its Technical Step and Devilment abilities.</p>
+<p>Dancer is a ranged physical DPS job (along with BRD and MCH) that has a pretty straightforward style to its gameplay. Their primary damage stat is dexterity (DEX). DNC is the DPS job that does the least amount of personal damage; however, it makes up for it by providing high damage-increasing buffs to your raid group. Part of DNC’s rotation is keeping a buff up called Standard Finish that increases your damage by 5%. Additionally, DNC has two two-minute cooldown abilities: Technical Step and Devilment. Technical Finish (which occurs after successfully completing the Technical Step dance) will provide a 5% damage up buff to the whole party for 20 seconds, and Devilment provides the DNC with a 20% crit hit rate and 20% direct hit rate boost for 20 seconds. DNC can also choose someone to be their Dance Partner in a fight with the ability Closed Position, which will duplicate the Standard Finish 5% damage up buff and the Devilment buff on the targeted party member. Additionally, DNC provides raid utility in the form of a small AoE heal called Curing Waltz and a party wide damage reduction ability called Shield Samba. Despite doing low overall personal damage, DNC offers incredibly powerful burst damage in a 20 second window every two minutes with its Technical Step and Devilment abilities.</p>
 <p>The rotational flow of DNC is a simple combo / proc GCD system coupled with two dance abilities, Standard Step and Technical Step, on a 30 second and two minute cooldown respectively. When beginning a dance, your normal GCDs are replaced with dance steps in order to unlock a finishing move (aptly named Standard Finish and Technical Finish). These dance steps do not do any damage, however, the dance finishes themselves are some of the strongest damage abilities in the game at 1000 and 1500 potency respectively. These dance finishes damage all enemies within a 15 yalm radius of you. The closest enemy will be hit for the full damage (1000 and 1500 potency respectively) while all other enemies will be hit for 75% reduced damage (250 potency for Standard Finish and 375 potency for Technical Finish).</p>
 <p>Outside of these dances, your normal GCDs include a set of basic 1 → 2 combo weaponskills called Cascade and Fountain. Cascade and Fountain each have a 50% chance to proc separate slightly more powerful weaponskills called Reverse Cascade and Fountainfall respectively. Additionally, every time you or your dance partner perform a weaponskill or spell while under the effect of Standard Finish, you have a chance to generate 10 Esprit. Your Esprit gauge can hold a maximum of 100 Esprit. Every 50 Esprit can be spent on a weaponskill called Saber Dance, which is your strongest GCD at 600 potency on primary target and 300 potency to all nearby enemies close to the target. Using Saber Dance, Reverse Cascade, Fountainfall, or your dances will not interrupt your Cascade → Fountain combo. Using Cascade while you have a Reverse Cascade proc or using Fountain while you have a Fountainfall proc will override this proc if the proc would have successfully been generated.</p>
 <p>Additionally, you have four more GCDs that mirror the way Cascade, Fountain, Reverse Cascade, and Fountainfall work in an AoE setting called Windmill, Bladeshower, Rising Windmill, and Bloodshower. All four of these weaponskills are AoEs in a circle around you (five yalm radius). Windmill combos into Bladeshower while Rising Windmill and Bloodshower are slightly stronger procs from the combo weaponskills.</p>
@@ -851,7 +851,6 @@ WD - short for weapon damage, stat on your main hand weapon</p>
 <li>Resilla and Yumiya (Helpful DNCs on The Balance who helped look over this guide for errors)</li>
 <li>Ellunavi (Moderator on The Balance, and contributed much to DNC resources including his analysis and simulation tool)</li>
 <li>Allagan Studies</li>
-<li>Alevia Rohan for helping me host this guide on SaltedXIV</li>
 <li>My static, “Monkeys with Typewriters”, for letting me put up the axe and become a DNC main =)</li>
 </ul>
 <h1 id=changelog>Changelog<a href=#changelog class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h1>
