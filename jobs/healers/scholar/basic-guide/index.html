@@ -4,38 +4,20 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
 <meta itemprop=name content>
-<meta itemprop=description content="Indomitable, A Thourough Guide to Scholar
- Author    Acknowledgements
-  What Does Scholar Do?
-  All About DPS
- How DoT&rsquo;s Work    The GCD and Weaving
-  How the Fairy Works
- Problems With The Fairy    Opportunity Costs
- Opportunity Costs for CoHealers Single Target Healing Priority AoE Healing Priority    Healing with White Mage">
+<meta itemprop=description content="Indomitable, A Thourough Guide to Scholar Author Tobio Okuma
+This is a guide for the Scholar (SCH) Job in FFXIV. The goal of this guide is to give insight into how the job is operating in our current raid environment. I will go over all of the job’s skills and describe their usage, as well as break down how Scholar interacts with other healers. I will go through small optimizations, useful macros, and more.">
 <meta itemprop=dateModified content="2021-10-26T21:33:14+00:00">
-<meta itemprop=wordCount content="12390">
+<meta itemprop=wordCount content="12307">
 <meta itemprop=keywords content><meta property="og:title" content>
-<meta property="og:description" content="Indomitable, A Thourough Guide to Scholar
- Author    Acknowledgements
-  What Does Scholar Do?
-  All About DPS
- How DoT&rsquo;s Work    The GCD and Weaving
-  How the Fairy Works
- Problems With The Fairy    Opportunity Costs
- Opportunity Costs for CoHealers Single Target Healing Priority AoE Healing Priority    Healing with White Mage">
+<meta property="og:description" content="Indomitable, A Thourough Guide to Scholar Author Tobio Okuma
+This is a guide for the Scholar (SCH) Job in FFXIV. The goal of this guide is to give insight into how the job is operating in our current raid environment. I will go over all of the job’s skills and describe their usage, as well as break down how Scholar interacts with other healers. I will go through small optimizations, useful macros, and more.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://guides.xivresources.com/jobs/healers/scholar/basic-guide/"><meta property="article:section" content="jobs">
 <meta property="article:modified_time" content="2021-10-26T21:33:14+00:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content>
-<meta name=twitter:description content="Indomitable, A Thourough Guide to Scholar
- Author    Acknowledgements
-  What Does Scholar Do?
-  All About DPS
- How DoT&rsquo;s Work    The GCD and Weaving
-  How the Fairy Works
- Problems With The Fairy    Opportunity Costs
- Opportunity Costs for CoHealers Single Target Healing Priority AoE Healing Priority    Healing with White Mage">
+<meta name=twitter:description content="Indomitable, A Thourough Guide to Scholar Author Tobio Okuma
+This is a guide for the Scholar (SCH) Job in FFXIV. The goal of this guide is to give insight into how the job is operating in our current raid environment. I will go over all of the job’s skills and describe their usage, as well as break down how Scholar interacts with other healers. I will go through small optimizations, useful macros, and more.">
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -67,97 +49,6 @@
 <main class="site-main section-inner thin animated fadeIn faster">
 <h1></h1>
 <div class=content>
-<ul>
-<li>
-<p><a href=#indomitable-a-thourough-guide-to-scholar>Indomitable, A Thourough Guide to Scholar</a></p>
-<ul>
-<li><a href=#author>Author</a></li>
-</ul>
-</li>
-<li>
-<p><a href=#acknowledgements>Acknowledgements</a></p>
-</li>
-<li>
-<p><a href=#what-does-scholar-do>What Does Scholar Do?</a></p>
-</li>
-<li>
-<p><a href=#all-about-dps>All About DPS</a></p>
-<ul>
-<li><a href=#how-dots-work>How DoT&rsquo;s Work</a></li>
-</ul>
-</li>
-<li>
-<p><a href=#the-gcd-and-weaving>The GCD and Weaving</a></p>
-</li>
-<li>
-<p><a href=#how-the-fairy-works>How the Fairy Works</a></p>
-<ul>
-<li><a href=#problems-with-the-fairy>Problems With The Fairy</a></li>
-</ul>
-</li>
-<li>
-<p><a href=#opportunity-costs>Opportunity Costs</a></p>
-<ul>
-<li><a href=#opportunity-costs-for-cohealers>Opportunity Costs for CoHealers</a></li>
-<li><a href=#single-target-healing-priority>Single Target Healing Priority</a></li>
-<li><a href=#aoe-healing-priority>AoE Healing Priority</a></li>
-</ul>
-</li>
-<li>
-<p><a href=#healing-with-white-mage>Healing with White Mage</a></p>
-</li>
-<li>
-<p><a href=#healing-with-ast>Healing with AST</a></p>
-</li>
-<li>
-<p><a href=#how-shielding-works>How Shielding Works</a></p>
-<ul>
-<li><a href=#when-to-shield>When to Shield</a></li>
-</ul>
-</li>
-<li>
-<p><a href=#how-healing-buffs-work>How Healing Buffs Work</a></p>
-</li>
-<li>
-<p><a href=#deployment-tactics>Deployment Tactics</a></p>
-</li>
-<li>
-<p><a href=#summon-seraph>Summon Seraph</a></p>
-</li>
-<li>
-<p><a href=#recitation>Recitation</a></p>
-</li>
-<li>
-<p><a href=#dissipation>Dissipation</a></p>
-</li>
-<li>
-<p><a href=#mp-management>MP Management</a></p>
-</li>
-<li>
-<p><a href=#movement>Movement</a></p>
-</li>
-<li>
-<p><a href=#how-mitigation-works>How Mitigation Works</a></p>
-</li>
-<li>
-<p><a href=#party-mitigations>Party Mitigations</a></p>
-</li>
-<li>
-<p><a href=#raid-buffs>Raid Buffs</a></p>
-<ul>
-<li><a href=#buff-alignment>Buff Alignment</a></li>
-</ul>
-</li>
-<li>
-<p><a href=#macros>Macros</a></p>
-</li>
-<li>
-<p><a href=#general-tips>General Tips</a></p>
-</li>
-<li>
-<p><a href=#additional-resources>Additional Resources</a></p>
-</li>
-</ul>
 <h1 id=indomitable-a-thourough-guide-to-scholar>Indomitable, A Thourough Guide to Scholar<a href=#indomitable-a-thourough-guide-to-scholar class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h1>
 <h2 id=author>Author<a href=#author class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
 <p><strong>Tobio Okuma</strong></p>
