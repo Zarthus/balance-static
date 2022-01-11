@@ -9,11 +9,21 @@
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Machinist Basic Guide">
-<meta itemprop=description content="Job Overview Machinist is a fast-paced physical ranged job that excels at quick burst damage and has the added benefit of free movement. While the base rotation for this job is somewhat strict, Machinist excels in dumping burst into raid buffs with flexible use of its gauge system. This guide’s aim is to break down the job’s rotation into something easy to digest while providing good practices to follow for overall gameplay.">
+<meta itemprop=description content="Basic Machinist Guide Welcome to the Basic Machinist Guide! Within this document, you&rsquo;ll find all the information you&rsquo;ll need to play the job well. The links below can be used as teleports to other pages if you need the information while learning the job. Any questions can be directed to the Machinist channels in our Discord.
+Openers 
+Advanced Guide (WIP)
+Meld Priority (Listed on the landing page.)
+Gearing
+Skills Overview">
 <meta itemprop=dateModified content="2022-01-09T08:26:36+00:00">
-<meta itemprop=wordCount content="2687">
+<meta itemprop=wordCount content="2763">
 <meta itemprop=keywords content><meta property="og:title" content="Machinist Basic Guide">
-<meta property="og:description" content="Job Overview Machinist is a fast-paced physical ranged job that excels at quick burst damage and has the added benefit of free movement. While the base rotation for this job is somewhat strict, Machinist excels in dumping burst into raid buffs with flexible use of its gauge system. This guide’s aim is to break down the job’s rotation into something easy to digest while providing good practices to follow for overall gameplay.">
+<meta property="og:description" content="Basic Machinist Guide Welcome to the Basic Machinist Guide! Within this document, you&rsquo;ll find all the information you&rsquo;ll need to play the job well. The links below can be used as teleports to other pages if you need the information while learning the job. Any questions can be directed to the Machinist channels in our Discord.
+Openers 
+Advanced Guide (WIP)
+Meld Priority (Listed on the landing page.)
+Gearing
+Skills Overview">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/ranged/machinist/basic-guide/"><meta property="article:section" content="jobs">
 <meta property="article:modified_time" content="2022-01-09T08:26:36+00:00">
@@ -284,9 +294,10 @@ Newsfeed
 <div class="nested-link font-bold py-2">
 <nav id=TableOfContents>
 <ul>
+<li><a href=#basic-machinist-guide>Basic Machinist Guide</a></li>
 <li><a href=#job-overview>Job Overview</a>
 <ul>
-<li><a href=#job-gauge>Job Gauge </a></li>
+<li><a href=#machinist-heat--battery-gauge>Machinist Heat & Battery Gauge </a></li>
 </ul>
 </li>
 <li><a href=#the-two-minute-loop-and-rotational-theory>The Two-Minute Loop and Rotational Theory</a>
@@ -306,10 +317,18 @@ Newsfeed
 </div>
 <div class=job-guides-container>
 <div class="markdown max-w-none">
+<h1 id=basic-machinist-guide>Basic Machinist Guide</h1>
+<p>Welcome to the Basic Machinist Guide! Within this document, you&rsquo;ll find all the information you&rsquo;ll need to play the job well. The links below can be used as teleports to other pages if you need the information while learning the job. Any questions can be directed to the Machinist channels in our Discord.</p>
+<p><a href=https://www.thebalanceffxiv.com/jobs/ranged/machinist/openers/>Openers </a></p>
+<p>Advanced Guide (WIP)</p>
+<p><a href=https://www.thebalanceffxiv.com/jobs/ranged/machinist/>Meld Priority</a> (Listed on the landing page.)</p>
+<p><a href=https://www.thebalanceffxiv.com/jobs/ranged/machinist/best-in-slot/>Gearing</a></p>
+<p><a href=https://www.thebalanceffxiv.com/jobs/ranged/machinist/skills-overview/>Skills Overview</a></p>
+<p><a href=https://www.thebalanceffxiv.com/jobs/ranged/machinist/faq/>Frequently Asked Questions</a></p>
 <h1 id=job-overview>Job Overview</h1>
 <p>Machinist is a fast-paced physical ranged job that excels at quick burst damage and has the added benefit of free movement. While the base rotation for this job is somewhat strict, Machinist excels in dumping burst into raid buffs with flexible use of its gauge system. This guide’s aim is to break down the job’s rotation into something easy to digest while providing good practices to follow for overall gameplay.</p>
 <p>If you’re new to the job and would just like a basic overview of Machinist during the leveling process, <a href=/jobs/ranged/machinist/leveling-guide/>click here</a>.</p>
-<h2 id=job-gauge>Job Gauge </h2>
+<h2 id=machinist-heat--battery-gauge>Machinist Heat & Battery Gauge </h2>
 <p>Machinist comes with two gauges. The Heat Gauge (top) is used to Hypercharge which costs 50 Heat. The Battery Gauge (bottom) is used to summon your Automaton Queen to fight alongside you for a specified amount of time based on the amount of Battery you had at the time of summoning. You must accrue at least 50 Heat or Battery to use their respective abilities, and neither should be allowed to overcap if possible.</p>
 <p><img src=https://lh4.googleusercontent.com/QsQSG5c79EfLZe3wXkwZWsagFAlYmyeyZY0wC_ksPDFeXCjSY8Nr8g80biSCUpKrFhZLK1PSJbjY9lvhao3vGgi4mGbZUZCOf7kzXyc8ybUQnO6dPRPtdD5CMEyO5PpBz80hQntS alt></p>
 <h1 id=the-two-minute-loop-and-rotational-theory>The Two-Minute Loop and Rotational Theory</h1>
@@ -458,15 +477,9 @@ Weapon Damage > Dexterity > Critical Hit > Determination > Direct Hit > Skill sp
 <h1 id=high-ping-and-what-you-can-do-about-it>High Ping and What You Can Do About It</h1>
 <p>You may have noticed parts of the Machinist rotation feeling somewhat unresponsive to your button pushing. This is a common occurrence that can happen for a multitude of reasons, almost always related to poor connection to the server. What you’re experiencing is referred to as “clipping”, due to prolonged animation lock that happens when your ping exceeds the allotted time the game gives you between GCDs to use your oGCDs. Machinist suffers more than most other jobs simply because of the Hypercharge window forcing a 1.5 second GCD and also requiring you to weave between Heat Blasts. There are a few ways to handle this:</p>
 <ul>
-<li>
-<p>If possible, ensure you are using a wired connection. WiFi can be spotty and result in packet loss.</p>
-</li>
-<li>
-<p>If playing on an older computer, lower graphics settings and turn off particle effects to increase your framerate. This only matters when your frame rate is so low that it is visibly affecting your gameplay.</p>
-</li>
-<li>
-<p>Utilize a gaming VPN. Occasionally, ISPs will route your connection inefficiently, and a VPN can correct the issue by lowering packet loss and ping, creating a more stable connection to the server. Listed below are VPN options.</p>
-</li>
+<li>If possible, ensure you are using a wired connection. WiFi can be spotty and result in packet loss.</li>
+<li>If playing on an older computer, lower graphics settings and turn off particle effects to increase your framerate. This only matters when your frame rate is so low that it is visibly affecting your gameplay.</li>
+<li>Utilize a gaming VPN. Occasionally, ISPs will route your connection inefficiently, and a VPN can correct the issue by lowering packet loss and ping, creating a more stable connection to the server. Listed below are VPN options.</li>
 <li>
 <ul>
 <li>Mudfish</li>
