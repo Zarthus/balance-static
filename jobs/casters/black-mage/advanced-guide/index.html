@@ -12,15 +12,15 @@
 <meta itemprop=description content="Written by Reina Kousaka of Leviathan Last updated: Feb 13 2022
 Prologue  “To make it short, they don&rsquo;t teach or research &ldquo;potency per second&rdquo; in universities.” - DiaStarvy
 Hello. I am Reina, a caster player, and I am standing on the shoulders of giants. This document aims to provide a comprehensive guide on advanced non-standard playstyle (also known as the AI rotation). There is the assumption you know all of the basics of BLM, including abbreviations and fundamentals.">
-<meta itemprop=dateModified content="2022-02-18T04:51:21+00:00">
-<meta itemprop=wordCount content="10484">
+<meta itemprop=dateModified content="2022-02-25T05:10:25+00:00">
+<meta itemprop=wordCount content="10486">
 <meta itemprop=keywords content><meta property="og:title" content="Black Mage Advanced Guide">
 <meta property="og:description" content="Written by Reina Kousaka of Leviathan Last updated: Feb 13 2022
 Prologue  “To make it short, they don&rsquo;t teach or research &ldquo;potency per second&rdquo; in universities.” - DiaStarvy
 Hello. I am Reina, a caster player, and I am standing on the shoulders of giants. This document aims to provide a comprehensive guide on advanced non-standard playstyle (also known as the AI rotation). There is the assumption you know all of the basics of BLM, including abbreviations and fundamentals.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/casters/black-mage/advanced-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2022-02-18T04:51:21+00:00">
+<meta property="article:modified_time" content="2022-02-25T05:10:25+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -295,7 +295,7 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 18 Feb, 2022</div>
+<div>Last Updated: 25 Feb, 2022</div>
 <div>Patch Applicable: 6.08</div>
 </div>
 <div class="py-4 text-right">
@@ -347,7 +347,7 @@ Newsfeed
 <li><a href=#suboptimal-lines>Suboptimal Lines</a></li>
 </ul>
 </li>
-<li><a href=#appendix> Appendix</a>
+<li><a href=#appendix>Appendix</a>
 <ul>
 <li><a href=#spellspeed-thresholds>Spellspeed Thresholds </a></li>
 <li><a href=#acknowledgements>Acknowledgements</a></li>
@@ -384,7 +384,7 @@ Newsfeed
 <h3 id=mp-and-lucid-ticks>MP and Lucid ticks</h3>
 <p>Our MP regens for 600 per tick out of combat and 200 per tick during combat, with each tick happening every three seconds. While in Umbral Ice, we gain an additional MP of 3000, 4500, and 6000 MP from the UI1, UI2, and UI3 bonuses respectively. In total, we can expect 3200, 4700, or 6200 MP per tick while in UI. On the other hand, Lucid ticks provide 550 MP per tick. In the overworld, each Lucid tick happens exactly halfway between two MP ticks. However, while in an instance, this timer will constantly drift, and it will become random when a Lucid tick occurs. </p>
 <p>Both MP and Lucid ticks can be tracked via triggers. You can download a <a href=https://github.com/marconsou/mp-tick-bar>MP tick trigger here</a>, with other triggers available elsewhere. Having a tick trigger makes tracking MP ticks considerably easier and is recommended for anyone serious about high end BLM optimizations. In addition, some optimizations listed in later sections are only possible with MP tick triggers.</p>
-<p><strong>Early MP ticks</strong></p>
+<p><strong>Early and correct MP ticks</strong></p>
 <p>Understanding how MP ticks interact with our rotation will become increasingly important as we dive deeper into non-standard lines. In many cases, if we get the right MP tick, often in the form of an early tick, we can conserve one filler resource. <strong>Such filler skips will prove to be crucial in reducing the cost of non-standard lines.</strong> For example, in the AF1 F3P Standard line above, if an MP tick happens right after we enter UI, we know that the next tick will happen sometime during or after the B4 cast, granting us full MP. With this, we can safely skip one filler. </p>
 <p><img src=https://lh4.googleusercontent.com/YCkBro8qbPjFbIHmtexoQvatFGVbbdaalbDBtMhq-lkM4qfbPATrvnPoPSv3SAMBsNH0x0X_qctiLLCRF1CxCdXtCGYFo65oGbloYaNhEUfindXTDt3uLe1IMaF4rA1KgcooK04U alt></p>
 <h3 id=the-blm-rotation-and-lines>The BLM rotation and lines</h3>
@@ -574,17 +574,17 @@ Newsfeed
 <p><img src=https://lh6.googleusercontent.com/om7NbZxRYAYSP0MhzTHv4fgujlORM6MfMjH_jCcN05UIYnKa4pxz3Fqsdb1m9mklgM_oe7kKc13-gePU8pkiayO3NNik0UYIsbKIOqdpGOSge-PyEASs1Ygg4XDKIrabZwGmAR4T alt></p>
 <p>Double Transpose AF1 lines specifically refers to a Double Transpose line that arrives at AF1, and then uses Paradox and/or F1 to reach AF3. The concept is similar to Double Paradox lines, but with an additional Transpose to skip both ice spells. In Double Transpose Paradox, the UI Paradox is conserved and used in AF instead. Double Transpose Paradox will also be relevant during micro downtimes, discussed in a later section. </p>
 <h3 id=4xf4-double-transpose-paradox-with-b4-n69>4xF4 Double Transpose Paradox with B4 [N69]</h3>
-<p><img src=https://lh4.googleusercontent.com/T4n6s032lBcETrX6R2fY_xoK_WlRw3bpAv6Zohb2AP3Wf1CCT30qAV0Qi22LT8LRDBD8jlx67-vbNnHHzTvwHr50nm9MLbU97HGgColeUS7gvratJZ2-wKn1cC8Xfx19Gy5S9p7h alt></p>
+<p><img src=https://lh4.googleusercontent.com/jI48oAtg8E-madSXL0b0JqsinH9D4DfjJOxXfqBNMwl3VEVaRAdhUHUkmDPHKpU03tV5yPe6vP_UxWeG1BLtjygW3irQio8x9I_ESxQN3APNZgpF44FQ3U6rAOBtSFKSUC39ytEp alt></p>
 <p>B4 can be used in place of a filler while also providing a longer fire phase. Three UI1 ticks are required. This line is surprisingly potent as it shares the principles of Double Paradox but skips the weak B3 cast. This line yields a 3.4% gain and provides a high F3P proc rate at the same time.</p>
 <p><strong>4xF4 Double Transpose Paradox with B4, AF2 F4 variation [N69.69]</strong></p>
-<p><img src=https://lh5.googleusercontent.com/wHIhNeDwrPPGxWlYU2t9PZsQw994kd4naVBX031ioAd8RfRGdZFm5YEzVTnrqjE9haCTaM8vvk1dpbPkCJCOyCIiZqDuj9OkLo9V4YHbj2MI5YUHCcJQB1ywFRLUTsl6ve75dpV1 alt></p>
-<p>9600 MP is required upon returning to AF. Uses F1’s refresh to enable one more F4 under AF2. This line is about 0.2% lower in PPS compared to N69, but one GCD longer. </p>
+<p><img src=https://lh3.googleusercontent.com/Z_GrC2Apxb5IFtydtOz91MVQ12KMZDuDK7hcoDyywj_hmRJrx0xhZKh2nL9eRQj8uS7cNRogfMEu7smgiIUCZkIdTGyv6jfkxY5DXkc-VMAMOWqc7-4i30OTTOeN5_tvOBgwp5Lr alt></p>
+<p>9600 MP is required upon returning to AF. Uses F1’s refresh to enable 1 more F4 under AF2. This line is about 0.2% lower in PPS compared to N69, but 1 GCD longer.</p>
 <p><strong>3xF4 Double Transpose Paradox with B4 [N70]</strong></p>
-<p><img src=https://lh5.googleusercontent.com/o6_nD-7TlspkGB9F3ifUTfd2ka-wT156Otf3ITWq2tp21Ow3dVqd019GlXXgw4E2Wnr3kxt4GyxrHFd7MRVyesmyUovoJZpo4pSZRoPRVyVdz9HrZjFzzLIuadvWBjWM3-HlP-vv alt></p>
-<p>Same line as N69 but with one less F4. Three UI1 ticks or two UI1 ticks and two Lucid ticks are needed. Compared to the 4xF4 variant, this line has a much higher chance of skipping a filler. The fire phase also offers an extra cast. ~2.0% stronger than Standard. </p>
+<p><img src=https://lh3.googleusercontent.com/bx60C9oqUmGG8M1-V5ZqpSXn1gIK04ocztIP3fAIPaODNcxrQDmqiOJLjLuUraKNirXJI42nnj46kMrisqeh90s6FaGd6Aa9r9SxwLxNaPy453BQMtwwzTkqCgEkd6eUpf7XthKp alt></p>
+<p>Same line as N69 but with one less F4. 3 UI1 ticks or 2 UI1 ticks and 2 Lucid ticks are needed. Compared to the 4xF4 variant, this line has a much higher chance of skipping a filler. The fire phase also offers an extra filler cast. ~2.0% stronger than Standard.</p>
 <p><strong>5xF4 Double Transpose Paradox with B4 [N71]</strong></p>
-<p><img src=https://lh3.googleusercontent.com/kKLVTRVDT_VUze3QDccYccDCob-i1Wbu_7vKOxUmOZnWbXMQPQbzXN-vwmXb23Exvx2Hv_U6AOleKrolDx0KiUMgXtlpXT1ZrFElFJe2WxwphmcpD-MpkoEytnO7FkrAdCE2q8iB alt></p>
-<p>Another stronger variant of the line, enabled by Ley Lines. ~4.4% gain over standard. At least 9600 MP is required upon entering AF. </p>
+<p><img src=https://lh3.googleusercontent.com/xVyVq-BmE1m-xIwp6qdWMbrvseDG0pPWniGKxDSXNeWTkFgiT3eQROLVP8BhlEVgE_N09A-StIblrED3a45udcVxbP3DXLbOYv1iW4aKozILG_f1toqymh1XKAJGsKJ3wxr7EJu1 alt></p>
+<p>Another stronger variant of the line, enabled by Ley Lines. ~4.4% gain over standard. At least 9600 MP is required upon entering AF.</p>
 <h3 id=4xf4-double-transpose-f3p-with-f1-n116>4xF4 Double Transpose F3P with F1 [N116]</h3>
 <p><img src=https://lh6.googleusercontent.com/-Fj06Dbv0ngwH56C8_LBdo8wH9ZR2AIN65G3gL_oADJjV8o5qWd6q2FKR-YlE41bTT95R0ondSVH2X5I9B62z0itxXNFFqaBwRvaB6U5OqjquASQNAhk6T5D8kQdra4DacejvEk8 alt></p>
 <p>Uses F1 to refresh when Triple is unavailable to enable four F4s in AF. A fair bit weaker than previous shorter Double Transpose F3P lines, but provides the ability to produce a F3P. </p>
@@ -641,7 +641,7 @@ Newsfeed
 <p>Example: choosing a different line over 3xF4 Double Transpose due to its tighter tick timing when one filler is skipped.</p>
 <p><strong>The decision of which line to enter is extremely situational as it is more dependent on mechanics, alignments, procs, and resources, rather than a simple potency comparison</strong></p>
 <h1 id=advanced>Advanced</h1>
-<p>**Certain section requires the <a href=https://docs.google.com/document/d/1vsI2r4064VHJ8WuhItXB7ilbdjEJ26GphZSsjWiyDDU/>MP tick trigger.</a> **</p>
+<p><strong>Certain section requires the <a href=https://docs.google.com/document/d/1vsI2r4064VHJ8WuhItXB7ilbdjEJ26GphZSsjWiyDDU/>MP tick trigger.</a></strong> </p>
 <h2 id=opener-sequence>Opener Sequence</h2>
 <p>Earlier, we explored the possibility of combining non-standard lines into our opener for longer and stronger openers. With the ability to track MP ticks as well as being able to do the countdown, we have far more control over the beginning of each fight. We can eliminate unnecessary fillers during UI and create stronger openers. A prolonged opener phase also eliminates some variance and provides consistency to what we aim to do.</p>
 <p><strong>Example opener sequence</strong></p>
@@ -747,9 +747,10 @@ Newsfeed
 <p><strong>5xF4 [N13]</strong></p>
 <p><img src=https://lh3.googleusercontent.com/b8YuRaVIoFoWAHzh31ZjRc3moot8d93RW-I1-S4OObqXeQaW1Lm6wPNE5SftksWJI0Nxa6xyzeOg4uXrpAMDTtKvyI0JWZaZFBatRmJAxebxhSFOFAdgMuwNx3StBjHasBT6YDY1 alt></p>
 <p>Requires Ley Lines or Triplecast at high SpS. Essentially the same in PPS as standard.</p>
-<h1 id=appendix> Appendix</h1>
+<h1 id=appendix>Appendix</h1>
 <h2 id=spellspeed-thresholds>Spellspeed Thresholds </h2>
 <p>The table below shows minimum spell speeds at which each sequence is possible. This table can also be found in the <a href="https://docs.google.com/spreadsheets/d/1K57e7zFoCuLDLX2kbCAlRBrJO6LS42ifz7e5DQEPn8E/edit#gid=1999363100">Lines Comparison sheet.</a> The values are tested at ~100 FPS and ~70 ping, out of instance. This table is meant to serve as a rough reference only and you should test specific sequences for yourself. Your results may vary based on latency and a number of other factors. In addition, for simplicity, SpS are in base 2.5 seconds cast, which could have differing cast times for other base spellspeeds. For example, a 2.46 seconds cast in 2.5 seconds base could mean either a 2.76 seconds cast or a 2.75 seconds cast in base 2.8 seconds. Lastly, you should aim for more spellspeed than what is listed for leniency and other factors.</p>
+<p><img src=https://lh5.googleusercontent.com/aB4O1XBWMGJsCkjyBvnc7OY8hL3j2m8E19Mw1B7Ii5HUrSdi3GPgsqfpyKPXIZV-zEhi1QigIekfLV3VzHdzhZ067dnRfZ6SCI7qaMfuror1IrQrQCgCIB8QLQ_splZPnJt7YYOH alt></p>
 <h2 id=acknowledgements>Acknowledgements</h2>
 <p>Written by Reina Kousaka of team Abysm. You can find me on Discord @ Reina#0001</p>
 <p>Lady Yuna’lesca for developing the simulation “Megumin” AI (origin of the name “AI rotation”) which paved the way of discovering many of these lines, and for his contributions to this document. <strong><a href=https://drive.google.com/drive/u/0/folders/1lyO0FrNkLDVAYGFi2ILh4SUoC96_WGKz>You can find Yuna’s AI here. </a></strong></p>
