@@ -604,21 +604,21 @@ on cooldown at the right time without interfering with your GCD rotation. Below 
 <p>The standard and most ping-friendly Wildfire setup.</p>
 <p>
 <div class=md__image>
-<img id="[475 188 72 94 166 492]" src=https://i.imgur.com/AI9YFak.png onclick=openModal(this.id) alt="WF &amp;gt; HC">
+<img id="[204 265 381 84 68 292]" src=https://i.imgur.com/AI9YFak.png onclick=openModal(this.id) alt="WF &amp;gt; HC">
 </div>
 </p>
 <h2 id=wf--gcd--hc>WF > GCD > HC</h2>
 <p>If you need to weave Wildfire before a tool GCD, use this setup.</p>
 <p>
 <div class=md__image>
-<img id="[124 16 44 481 321 152]" src=https://i.imgur.com/sjBViLP.png onclick=openModal(this.id) alt="WF &amp;gt; GCD &amp;gt; HC">
+<img id="[370 135 150 172 82 239]" src=https://i.imgur.com/sjBViLP.png onclick=openModal(this.id) alt="WF &amp;gt; GCD &amp;gt; HC">
 </div>
 </p>
 <h2 id=hc--hb--wf>HC > HB > WF</h2>
 <p>This one exists too.</p>
 <p>
 <div class=md__image>
-<img id="[256 87 120 299 326 423]" src=https://i.imgur.com/j2KijBX.png onclick=openModal(this.id) alt="HC &amp;gt; HB &amp;gt; WF">
+<img id="[281 262 188 380 136 185]" src=https://i.imgur.com/j2KijBX.png onclick=openModal(this.id) alt="HC &amp;gt; HB &amp;gt; WF">
 </div>
 </p>
 <h1 id=opener-optimization>Opener Optimization</h1>
@@ -678,7 +678,7 @@ which you may find useful (feel free to rearrange the order of the tool GCDs as 
 maximizing buff alignment.</p>
 <p>
 <div class=md__image>
-<img id="[403 23 196 352 398 83]" src=https://i.imgur.com/x0Ah7a2.png onclick=openModal(this.id) alt="Delayed Tools">
+<img id="[439 32 443 293 256 63]" src=https://i.imgur.com/x0Ah7a2.png onclick=openModal(this.id) alt="Delayed Tools">
 </div>
 </p>
 <h3 id=fast>Fast</h3>
@@ -686,7 +686,7 @@ maximizing buff alignment.</p>
 This variant uses Drill last to enable double Hypercharge windows in between Drill casts.</p>
 <p>
 <div class=md__image>
-<img id="[274 17 277 496 343 423]" src=https://i.imgur.com/Hg0WVeE.png onclick=openModal(this.id) alt="Fast Opener">
+<img id="[151 17 31 236 435 220]" src=https://i.imgur.com/Hg0WVeE.png onclick=openModal(this.id) alt="Fast Opener">
 </div>
 </p>
 <h1 id=tinctures>Tinctures</h1>
@@ -796,10 +796,15 @@ more complicated than evaluating Battery. To properly evaluate Heat we need to s
 which our Hypercharge Combo replaces, which will almost always be a full Heated Combo (single target) or three
 Scatterguns (AoE). Since these actions all generate Heat themselves, we have to define Heat&rsquo;s effective potency recursively!</p>
 <p>In single target, the full equation for evaluating Heat (i.e. <em>x</em>) is as follows:</p>
-<pre><code>x = (Heat Blast Combo potency - Heated Combo potency) / (Heat cost of Hypercharge)
+<div class=codeblock>
+<pre>
+    <code>
+x = (Heat Blast Combo potency - Heated Combo potency) / (Heat cost of Hypercharge)
 x = (200*5 + 120*2.5 + 120*2.5 - (200 + 280 + 360 + 15x + 10*23.67)) / 50
-x = 8.05
-</code></pre><p> </p>
+x = 8.05</code>
+  </pre>
+</div>
+<p> </p>
 <p>Thus, Heat is worth <strong>8.05 PPG</strong> in single target. Using similar math we can determine the value of Heat in AoE
 scenarios, replacing the Heat Blast and Heated Combo potencies with Auto Crossbow and Scattergun potencies as needed.
 Below is the value of Heat from 1-6 targets:</p>
@@ -959,12 +964,23 @@ crit rate buffs on us, the resulting increase to our crit rate is <code>.1 + .1 
 <p>To be able to adequately evaluate actions like Wildfire and Reassemble, as well as rate buffs like Battle Litany, we need
 to augment our potency model with crit / DH normalizations. The following formula can be used to determine your <strong>expected crit
 multiplier</strong>:</p>
-<pre><code>expected crit multiplier = (1 + (crit modifier - 1) * crit rate)
-</code></pre><p> </p>
+<div class=codeblock>
+<pre>
+    <code>
+expected crit multiplier = (1 + (crit modifier - 1) * crit rate)</code>
+  </pre>
+</div>
+<p> </p>
 <p>For example, if your crit multiplier is 1.5x and your crit rate is 20%, your expected multiplier is
 <code>(1 + (1.5 - 1) * 0.2) = 1.1</code>. We can do the same for DH:</p>
-<pre><code>expected DH multiplier = (1 + (0.25 * DH rate))
-</code></pre><p> </p>
+<p>
+<div class=codeblock>
+<pre>
+    <code>
+expected DH multiplier = (1 + (0.25 * DH rate))</code>
+  </pre>
+</div>
+ </p>
 <p>Now we&rsquo;re all set to compare potency across different crit / DH scenarios. Usually we call this model
 of potency which incorporates crit and DH rates <strong>&ldquo;effective potency&rdquo;</strong> (or, ePotency).
 If we have a crit buff up, we simply need to adjust the crit rate variable in the crit multiplier.
