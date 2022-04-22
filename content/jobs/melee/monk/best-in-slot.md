@@ -35,9 +35,9 @@ bis:
     description: Pentamelded crafted gear.
     name: (89.583%) 1.94 GCD
     link: https://i.imgur.com/qq7Elq1.png
-  - type: spreadsheet
+  - type: gsheets
     description: ""
-    link: https://docs.google.com/document/d/1Qk1miOkniQ3szZJO0H4Si8TqBnoEDLhVuPPPH5z63kc/edit?usp=sharing
+    link: https://docs.google.com/document/d/e/2PACX-1vTr8EtW1PgpwCHIGw5pEq0LD_uLRgtdk6mNJEe2b4LvAMwTpB8KqNjcxLbxsgfIRkesAUCrhkg_ICxN/pub
     name: BIS sets for Ultimate encounters
 authors:
   - Balance-MNK-Staff
