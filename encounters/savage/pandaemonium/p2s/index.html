@@ -29,7 +29,7 @@ The Second Circle (Savage) is the first raid encounter in the Pandaemonium serie
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -361,7 +361,11 @@ Newsfeed
 <p>The Hippokampos has a hard enrage of 10:28 into the encounter and requires roughly 41.9k raid DPS to defeat before then.</p>
 <h3 id=pre-pull-preparation>Pre-pull Preparation</h3>
 <p>Assign the raid into two light party stacks with one tank, one healer, and two DPS each. Place the markers as such, indicating the raised platforms and the drained passages.</p>
-<p><img src=https://i.imgur.com/hqmh8pR.jpeg alt></p>
+<p>
+<div class=md__image>
+<img id="[63 428 471 335 188 228]" src=https://i.imgur.com/hqmh8pR.jpeg onclick=openModal(this.id) alt>
+</div>
+</p>
 <h3 id=mechanic-overview>Mechanic Overview</h3>
 <p><strong>Murky Depths</strong></p>
 <p>A moderate raidwide AoE that deals magic damage.</p>
@@ -442,7 +446,11 @@ Kampeos Harma
 </ul>
 </li>
 </ul>
-<p><img src=https://i.imgur.com/vYcJBzZ.jpeg alt></p>
+<p>
+<div class=md__image>
+<img id="[478 172 360 144 40 428]" src=https://i.imgur.com/vYcJBzZ.jpeg onclick=openModal(this.id) alt>
+</div>
+</p>
 <ul>
 <li>Get together and heal up, and do the same mechanic but with reversed groups - the players that previously had to do Mark of the Tides will have Tainted Flood, and vice-versa.</li>
 <li>The water will then recede.</li>
@@ -578,7 +586,15 @@ Sewage Deluge
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

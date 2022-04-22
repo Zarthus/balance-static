@@ -33,7 +33,7 @@ Opener Optimization Assumed Timings:
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -354,11 +354,19 @@ After the buffs are up, the skills are used more or less in order of importance,
 <li>The expected timing for all buffs to be up is approximately 7.80s after Tomahawk lands.</li>
 </ul>
 <h4 id=ic-ir-ic-opener>IC IR IC Opener</h4>
-<p><img src=https://cdn.discordapp.com/attachments/583965306071023616/917968991706841108/unknown.png alt="IC IR IC Opener"></p>
+<p>
+<div class=md__image>
+<img id="[256 237 280 490 64 356]" src=https://cdn.discordapp.com/attachments/583965306071023616/917968991706841108/unknown.png onclick=openModal(this.id) alt="IC IR IC Opener">
+</div>
+</p>
 <p>Catches party buffs, however the second Inner Chaos is tight with Trick Attack.
 There&rsquo;s nothing special about this. This is your usual opener, probably.</p>
 <h4 id=ic-ic-ir>IC IC IR</h4>
-<p><img src=https://cdn.discordapp.com/attachments/583965306071023616/924377661252456478/unknown.png alt="IC IC IR Opener" title="IC IC IR opener"></p>
+<p>
+<div class=md__image>
+<img id="[335 10 63 236 163 79]" src=https://cdn.discordapp.com/attachments/583965306071023616/924377661252456478/unknown.png onclick=openModal(this.id) alt="IC IC IR Opener" title="IC IC IR opener">
+</div>
+</p>
 <p>Our strongest skills catch all the buffs, including Trick Attack. However, this comes at the cost of delaying IR by a GCD.<br>
 Nothing special apart from the slight IR + Rend delay.</p>
 <h4 id=cursed-prepull-ir-openers>Cursed Prepull IR Openers</h4>
@@ -470,7 +478,15 @@ An example of this would be a heavy-padding Zodiark Extreme, where the aim is to
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

@@ -29,7 +29,7 @@ You do also have the option of cutting the second Ruin III and doing Bahamut imm
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -330,12 +330,20 @@ Newsfeed
 <p>You do also have the option of cutting the second Ruin III and doing Bahamut immediately as well. Be warned that this runs the risk of ghosting Searing Light, particularly on higher ping, and may cause a forced delay for Bahamut and Searing Light alignment later in an encounter, depending on your SpS value. However, it can be better to do this adaptation in the opener in some circumstances.</p>
 <p>Be aware that if you are changing any timings that an optimal Searing Light GCD sequence will change from what is displayed here. Adjust accordingly to whatever timings you choose to pursue.</p>
 <p><a href=/img/jobs/smn/smnopener_0000_general.png>Full Size</a></p>
-<p><img src=/img/jobs/smn/smnopener_0000_general.png alt="Summoner - General Opener"></p>
+<p>
+<div class=md__image>
+<img id="[483 242 155 392 119 436]" src=/img/jobs/smn/smnopener_0000_general.png onclick=openModal(this.id) alt="Summoner - General Opener">
+</div>
+</p>
 <h3 id=fast-garuda>Fast Garuda</h3>
 <p>The below opener uses Garuda as the first primal, prioritizing Swiftcast to fit Slipstream into your party&rsquo;s raid buffs. This is a gain when your group is heavy in 15s buffs, as a Swiftcast Slipstream will barely fit into the end of these buffs.</p>
 <p>The adjustments mentioned above in the general opener are also valid for this opener, though again be aware that any changes in timings or GCD use will change the exact optimal sequence you may use.</p>
 <p><a href=/img/jobs/smn/smnopener_0001_fastgaruda.png>Full Size</a></p>
-<p><img src=/img/jobs/smn/smnopener_0001_fastgaruda.png alt="Summoner - Fast Garuda Opener"></p>
+<p>
+<div class=md__image>
+<img id="[211 218 499 267 447 259]" src=/img/jobs/smn/smnopener_0001_fastgaruda.png onclick=openModal(this.id) alt="Summoner - Fast Garuda Opener">
+</div>
+</p>
 <h2 id=rotation>Rotation</h2>
 <p>A full guide to Endwalker&rsquo;s version of Summoner is coming soon. In the meantime, here is a quick text snippet of the rotation. The general rotation flow is very simple, and follows like this:</p>
 <p>Bahamut -> Primal 1 -> Primal 2 -> Primal 3 -> Phoenix -> Primal 1 -> Primal 2 -> Primal 3 -> Repeat</p>
@@ -416,7 +424,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

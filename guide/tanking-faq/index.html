@@ -29,7 +29,7 @@ Why is my combo breaking? The combo timer is exactly 15 seconds long. This means
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -308,7 +308,10 @@ until that moment where you almost die.</p>
 Tenacity&rsquo;s got it.</p>
 <p>E4S shared buster sends its regards
 <a href="https://youtu.be/TLSc5QiCQMs?t=309">https://youtu.be/TLSc5QiCQMs?t=309</a>
-<img src=https://cdn.discordapp.com/attachments/396721085791338497/631391223474683915/unknown.png alt=Buster></p>
+<div class=md__image>
+<img id="[24 109 359 465 311 398]" src=https://cdn.discordapp.com/attachments/396721085791338497/631391223474683915/unknown.png onclick=openModal(this.id) alt=Buster>
+</div>
+</p>
 <h2 id=how-do-cooldowns-stack-up>How do cooldowns stack up?</h2>
 <p>Multiplicatively.</p>
 <p>Using two 20% cooldowns:
@@ -341,7 +344,15 @@ Has pretty strong mitigation and self-healing tools and is known as the third he
 <p>If I had to order the tanks in terms of &ldquo;Easy to pick up&rdquo;, I&rsquo;d list them WAR > PLD > DRK > GNB</p>
 <p>And to order them in terms of &ldquo;Hardest to optimize&rdquo;, I&rsquo;d go for PLD > GNB > DRK > WAR</p>
 <p>(Unless you do speedruns. In which case you did not need to read this.)</p>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

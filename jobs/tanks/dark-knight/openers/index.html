@@ -27,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -364,20 +364,32 @@ This section will list some <strong>General-purpose</strong> DRK openers which w
 <blockquote>
 <p>Text version: Prepull The Blackest Night > Prepull Blood Weapon just before pull > Hard Slash + Edge of Shadow + Delirium > Syphon Strike + Potion > Souleater + Living Shadow + Salted Earth > Hard Slash + Shadowbringer + Edge of Shadow > Bloodspiller + Carve and Spit + Plunge > Bloodspiller + Shadowbringer + Edge of Shadow > Bloodspiller + Salt and Darkness + Edge of Shadow > Syphon Strike + Plunge + Edge of Shadow</p>
 </blockquote>
-<p><img src=/img/jobs/drk/drk_6.0_standard_opener_v3.png alt="Standard Dark Knight Opener" title=Standard></p>
+<p>
+<div class=md__image>
+<img id="[362 122 356 124 192 286]" src=/img/jobs/drk/drk_6.0_standard_opener_v3.png onclick=openModal(this.id) alt="Standard Dark Knight Opener" title=Standard>
+</div>
+</p>
 <h2 id=early-delirium-opener>Early Delirium Opener</h2>
 <p>Useful if a fight benefits from a slightly earlier Delirium due to downtime or phasing</p>
 <blockquote>
 <p>Text version: Prepull Delirium > Prepull The Blackest Night > Prepull Blood Weapon just before pull > Hard Slash + Edge of Shadow > Syphon Strike + Potion > Souleater + Living Shadow + Salted Earth > Bloodspiller + Shadowbringer + Edge of Shadow > Bloodspiller + Carve and Spit + Plunge > Bloodspiller + Shadowbringer + Edge of Shadow > Hard Slash + Salt and Darkness + Edge of Shadow > Syphon Strike + Plunge + Edge of Shadow</p>
 </blockquote>
-<p><img src=https://cdn.discordapp.com/attachments/583964695266983944/925284132886552576/tmp4.PNG alt="Early Delirium Opener" title="Early Delirium"></p>
+<p>
+<div class=md__image>
+<img id="[32 339 465 255 250 101]" src=https://cdn.discordapp.com/attachments/583964695266983944/925284132886552576/tmp4.PNG onclick=openModal(this.id) alt="Early Delirium Opener" title="Early Delirium">
+</div>
+</p>
 <h2 id=unmend-opener>Unmend Opener</h2>
 <p>This opener should only be used if you need precise positioning on a boss early into the fight and can&rsquo;t do that with a standard (facepull) opener, or if you need a precise pull time, as it delays Living Shadow out of raid buffs, as well as delaying your MP generation.
 Consider having the other tank pull instead, then Provoke from them if needed.</p>
 <blockquote>
 <p>Text version: Prepull The Blackest Night > Unmend + Delirium + Blood Weapon > Hard Slash + Edge of Shadow > Syphon Strike + Potion > Souleater + Living Shadow + Salted Earth > Bloodspiller + Shadowbringer + Edge of Shadow > Bloodspiller + Carve and Spit + Plunge > Bloodspiller + Shadowbringer + Edge of Shadow > Hard Slash + Salt and Darkness + Edge of Shadow > Syphon Strike + Plunge + Edge of Shadow</p>
 </blockquote>
-<p><img src=https://cdn.discordapp.com/attachments/583964695266983944/925284495798710322/tmp4.PNG alt="Unmend Opener" title=Unmend></p>
+<p>
+<div class=md__image>
+<img id="[207 127 481 248 401 353]" src=https://cdn.discordapp.com/attachments/583964695266983944/925284495798710322/tmp4.PNG onclick=openModal(this.id) alt="Unmend Opener" title=Unmend>
+</div>
+</p>
 <hr>
 <h1 id=rotation>Rotation</h1>
 <p>Dark Knight’s rotation is deceptively simple, and follows these simple principles:</p>
@@ -494,7 +506,15 @@ Consider having the other tank pull instead, then Provoke from them if needed.</
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

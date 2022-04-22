@@ -29,7 +29,7 @@ As content is released, various openers may be utilized from fight to fight for 
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -328,15 +328,27 @@ Newsfeed
 <p>As content is released, various openers may be utilized from fight to fight for all manner of reasons. Learning only one opener can restrict you if you plan to do all forms of content.</p>
 <h3 id=1-2-3-no-mercy>1-2-3 No Mercy!</h3>
 <p>Our Standard opener. Allows us to line No Mercy into opening raid buffs while keeping our ammo straightforward and simple with adequate timing for our strength potion.</p>
-<p><img src=/img/jobs/gnb/standard.png alt="1-2-3 NM / Standard Opener" title="Standard Opener"></p>
+<p>
+<div class=md__image>
+<img id="[466 426 154 302 77 467]" src=/img/jobs/gnb/standard.png onclick=openModal(this.id) alt="1-2-3 NM / Standard Opener" title="Standard Opener">
+</div>
+</p>
 <p><a href=https://i.imgur.com/TR1kEsN.png>Full Size</a></p>
 <h3 id=keen-mercy>Keen Mercy</h3>
 <p>If the timing of a fight requires Gnashing Fang/Blasting Zone and/or No Mercy to be used earlier for line up, Keen Mercy opener pushes GF ahead two GCDs to secure earlier uses through the fight. This is done on a fight by fight basis and depends when bosses will be leaving the battlefield, and is only worth using if it secures an extra use before downtime occurs. (P3S at 2.43+ being an example where an earlier opener can allow you to maintain a full GF combo on the boss before it leaves for Add Phase).</p>
-<p><img src=/img/jobs/gnb/keen-1.png alt="Keen Mercy Opener" title="Keen Mercy Opener"></p>
+<p>
+<div class=md__image>
+<img id="[61 399 299 230 243 237]" src=/img/jobs/gnb/keen-1.png onclick=openModal(this.id) alt="Keen Mercy Opener" title="Keen Mercy Opener">
+</div>
+</p>
 <p><a href=https://i.imgur.com/N4eBMMl.png>Full Size</a></p>
 <h3 id=lightning-shot-opener>Lightning Shot Opener</h3>
 <p>If you are required to pull a boss and center it, and want to do so quickly and efficiently you can open with Lightning Shot. However, here we do No Mercy after Brutal shell to keep Gnashing Fang still at third GCD to ensure it’s still lined up to where it is in the original opener. An example of when to do this without fight specific positioning requirements would be if your Ninja wants to pull into a precast Doton &ndash; but due to the slight loss versus the 1-2-3-NM! opener, ask if your cotank can pull with a ranged attack for a smaller loss.</p>
-<p><img src=/img/jobs/gnb/ls.png alt="Lightning Shot Opener" title="Lightning Shot Opener"></p>
+<p>
+<div class=md__image>
+<img id="[378 52 479 306 496 432]" src=/img/jobs/gnb/ls.png onclick=openModal(this.id) alt="Lightning Shot Opener" title="Lightning Shot Opener">
+</div>
+</p>
 <p><a href=https://i.imgur.com/oattsCO.png>Full Size</a></p>
 </div>
 </div>
@@ -408,7 +420,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

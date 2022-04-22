@@ -29,7 +29,7 @@ These openers have not been too thoroughly tested as of yet, so please take them
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -328,7 +328,11 @@ Newsfeed
 <p>These openers have not been too thoroughly tested as of yet, so please take them with a grain of salt, and if you discover anything that flies counter to what we have listed here, please don’t hesitate to ask!</p>
 <h2 id=standard-opener>Standard Opener</h2>
 <p>The backbone of ten GCDs in sequence will - in general - never be changed, but the two blocks of skills (<strong>Buffs</strong> and <strong>Attacks</strong>) can be shuffled around within their respective slots if necessary to accommodate specific encounter timings.</p>
-<p><img src=https://cdn.discordapp.com/attachments/841722176017268826/925365578728898560/DRG_ew_opener.png alt="Standard Opener"></p>
+<p>
+<div class=md__image>
+<img id="[59 151 352 10 224 315]" src=https://cdn.discordapp.com/attachments/841722176017268826/925365578728898560/DRG_ew_opener.png onclick=openModal(this.id) alt="Standard Opener">
+</div>
+</p>
 <p>The default order of Geirskogul and High Jump remains this way for forever, with every odd Geirskogul landing immediately after Lance Charge or Lance Charge, Dragon Sight and Battle Litany and entering Life of the Dragon. As such, we no longer need to think about early/late life and double life as those windows are a thing of the past, barring potential fight-specific optimizations.</p>
 <p>This video has a full six minute rotation at a 2.50 GCD, using the opener above.</p>
 <div class="embed video-player">
@@ -400,7 +404,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

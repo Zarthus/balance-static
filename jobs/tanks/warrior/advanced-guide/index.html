@@ -29,7 +29,7 @@ There’s also the case of pushing out “3 IC Pot” windows and “2 IC Tricks
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -367,7 +367,10 @@ Be mindful about the gauge, as you don&rsquo;t want to overcap unless you know w
 <p>Congratulations, you just carried Inner Chaos for multiple GCDs</p>
 <p>As for how this would look like in FFLogs, here&rsquo;s a handy image.<br>
 To replicate this view, go to <a href="https://www.fflogs.com/reports/Gya7HRZ69QpDdrxm#fight=1&type=auras&source=1&ability=1001897">Character > Buffs > Drop-down menu: Nascent Chaos</a>
-<img src=https://cdn.discordapp.com/attachments/937834268950925433/950005284972142642/unknown.png alt="Carried Inner Chaos"></p>
+<div class=md__image>
+<img id="[482 73 252 80 326 20]" src=https://cdn.discordapp.com/attachments/937834268950925433/950005284972142642/unknown.png onclick=openModal(this.id) alt="Carried Inner Chaos">
+</div>
+</p>
 <h3 id=potions>Potions</h3>
 <p>Warriors have a couple of tricks up their sleeve when it comes to potions. Three is more than two, but there are things to consider. For example, never use NQ potions as they have a lesser effect and a longer recast time, and in a normal scenario our Inner Release starts only after 00:10&rsquo;ish.</p>
 <p>Depending on the kill time and fight downtimes, Warriors aim for the following Potions:</p>
@@ -414,7 +417,11 @@ Talk with your party regarding your potion timings. Some jobs and fights favor d
 <h3 id=2-ic-trick-attacks>2 IC Trick Attacks</h3>
 <p>This section requires more research.</p>
 <p><a href=https://xivanalysis.com/fflogs/vLgXHM7wyjZYNAPd/16/193>FFLogs parse for the image below</a></p>
-<p><img src=https://cdn.discordapp.com/attachments/937834268950925433/947119620618338385/unknown.png alt=alt_text title="2IC Tricks"></p>
+<p>
+<div class=md__image>
+<img id="[239 242 144 321 295 459]" src=https://cdn.discordapp.com/attachments/937834268950925433/947119620618338385/unknown.png onclick=openModal(this.id) alt=alt_text title="2IC Tricks">
+</div>
+</p>
 <h2 id=disrespecting-mechanics>Disrespecting mechanics</h2>
 <p>Since the beginning of FFXIV, the game has worked on simple boolean logic checks.</p>
 <ul>
@@ -467,7 +474,11 @@ Talk with your party regarding your potion timings. Some jobs and fights favor d
 Just don’t get hit by two Cataracts.</p>
 <h3 id=knockback-cancels>Knockback Cancels</h3>
 <p>There&rsquo;s not much to this tech; Use Onslaught whenever you&rsquo;re pushed back, while out of the target&rsquo;s hitbox. The knockback cancel works when Onslaught changes your character&rsquo;s direction of movement. The most satisfying thing is to cancel the knockback on the first &ldquo;frame&rdquo;.</p>
-<p><img src=https://cdn.discordapp.com/attachments/937834268950925433/947158285683937330/unknown.png alt="Shar&rsquo;s Warrior imagery"></p>
+<p>
+<div class=md__image>
+<img id="[370 485 415 352 294 411]" src=https://cdn.discordapp.com/attachments/937834268950925433/947158285683937330/unknown.png onclick=openModal(this.id) alt="Shar&amp;rsquo;s Warrior imagery">
+</div>
+</p>
 <h2 id=wanted-party-buffs>Wanted: Party Buffs</h2>
 <p>Warriors are kind of picky eaters when it comes to party buffs and debuffs. We don’t care much for the Critical Rate% buffs such as Chain Stratagem or Battle Litany, or Direct Hit Rate % buffs such as &lt;bard songs, dancer things>, because a good chunk of our kit already has 100% Direct Crit rate.</p>
 <p>Inner Chaos? 100% Direct Crit.<br>
@@ -584,7 +595,15 @@ Inner Release’d Fell Cleaves? 100% Direct Crit.</p>
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

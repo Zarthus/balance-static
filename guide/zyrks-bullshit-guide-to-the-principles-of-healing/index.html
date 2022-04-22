@@ -25,7 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -272,7 +272,11 @@ Newsfeed
 <h2 id=learn-how-to-hate-your-party-the-game-and-yourself>Learn how to hate your party, the game, and yourself</h2>
 <h1 id=about-the-author>About the Author</h1>
 <p>Hi, I’m Zyrkhan Dar’locke. My name is blue on The Balance, and that’s basically all I have to say for myself. You may also know me as “what?” and “literally who.” I’m here to talk about healing and stuff, because I guess I like it or something, mostly because I don’t respect myself. If you also would like to learn about healing, or just hate yourself enough to listen to me ramble about it for the next 48 pages, here’s a thing I guess.</p>
-<p><img src=https://i.imgur.com/DuwsD7v.png alt="Are you prepared to suffer?"></p>
+<p>
+<div class=md__image>
+<img id="[375 96 283 125 296 325]" src=https://i.imgur.com/DuwsD7v.png onclick=openModal(this.id) alt="Are you prepared to suffer?">
+</div>
+</p>
 <h1 id=credits>Credits</h1>
 <blockquote>
 <h3 id=healing-is-a-complikcated-jogo>“healing is a&mldr; complikcated jogo”</h3>
@@ -808,7 +812,15 @@ However, just because it’s worth more when you have smaller amounts, that does
 <blockquote>
 <p>-Zyrk</p>
 </blockquote>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

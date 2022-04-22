@@ -29,7 +29,7 @@ As this guide is relatively basic and does not go into any of the complexities o
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -349,10 +349,18 @@ Newsfeed
 <li>The smaller rectangular box to the right, in this case Lord of Crowns (red sword-like icon)</li>
 <li>The smaller symbols at the top of the gauge</li>
 </ul>
-<p><img src=/img/jobs/ast/job-gauge.jpg alt title="Job Gauge"></p>
+<p>
+<div class=md__image>
+<img id="[86 256 381 457 329 477]" src=/img/jobs/ast/job-gauge.jpg onclick=openModal(this.id) alt title="Job Gauge">
+</div>
+</p>
 <p> </p>
 <p>The simplified gauge looks as so:</p>
-<p><img src=/img/jobs/ast/simple-gauge.png alt title="Simple Gauge"></p>
+<p>
+<div class=md__image>
+<img id="[211 43 71 251 271 426]" src=/img/jobs/ast/simple-gauge.png onclick=openModal(this.id) alt title="Simple Gauge">
+</div>
+</p>
 <p> </p>
 <p>You will acquire your major Arcana through “Draw”, and consume it by using “Play”. You will acquire your minor Arcana through the eponymous action, “Minor Arcana”, and consume it by using “Crown Play”. Using your major Arcana, you will accrue Seals. Seals are consumed (once you have three) with “Astrodyne”.</p>
 <p>Using as many ‘Cards’ in a fight as you can is crucial to good AST play.</p>
@@ -375,14 +383,26 @@ Newsfeed
 <p>Additionally, you will execute Minor Arcana every minute, and try to hold Lord of Crowns (if you get it) until the 2m raid burst sequence, alongside Divination. It is okay if this is too much work to start, and you use your Lord right away. Just work towards this as you can.</p>
 <p>Use the following graphic to see how your overall card rotation will thus play out:</p>
 <p>(This is a huge graphic, so digest it as you can. The timeline at the top is most important)</p>
-<p><img src=/img/jobs/ast/astrodyne_timeline.png alt title="Astrodyne and card timeline"></p>
+<p>
+<div class=md__image>
+<img id="[39 440 391 443 424 29]" src=/img/jobs/ast/astrodyne_timeline.png onclick=openModal(this.id) alt title="Astrodyne and card timeline">
+</div>
+</p>
 <p> </p>
 <p>Additionally, use the following cheat sheet to review carding fundamentals, and some tips and tricks on how to use them:</p>
-<p><img src=/img/jobs/ast/carding_fundamentals_ew.png alt title="Carding fundamentals"></p>
+<p>
+<div class=md__image>
+<img id="[49 402 135 165 81 207]" src=/img/jobs/ast/carding_fundamentals_ew.png onclick=openModal(this.id) alt title="Carding fundamentals">
+</div>
+</p>
 <p> </p>
 <h1 id=opener>Opener</h1>
 <p>The base Astrologian opener is as follows:</p>
-<p><img src=/img/jobs/ast/ast_ew_opener_4.png alt title="Opener Guide"></p>
+<p>
+<div class=md__image>
+<img id="[235 167 94 210 112 283]" src=/img/jobs/ast/ast_ew_opener_4.png onclick=openModal(this.id) alt title="Opener Guide">
+</div>
+</p>
 <p> </p>
 <p>That is a large graphic, but a majority of it is just to show every possible opener because of Redraw. Reminder, you are aiming for a two-Seal Astrodyne, and as many melee cars as possible.</p>
 <p>If you would like to see a general priority list for which jobs to card, there is one provided in the #ast_resources section of <a href=https://www.discord.gg/thebalanceffxiv>The Balance</a>. Once we have a proper graphic constructed to represent this, you will also find this graphic here.</p>
@@ -492,7 +512,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">

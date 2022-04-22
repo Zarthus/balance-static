@@ -27,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -320,9 +320,17 @@ Newsfeed
 <h1 id=openers>Openers </h1>
 <p>It is important that you attempt to put as much damage into the raid buffs of your party as possible. Wildfire does not scale with skill speed, so once it’s placed in your opener it will never move forward and can only be delayed in your rotation. Wildfire should be placed properly in the opener based on your party composition and the downtime you have in an encounter. Wildfire snapshots raid buffs upon use of the ability &ndash; not on detonation. Wildfire cannot critical hit or direct hit, thus gaining no benefit from crit or direct hit-boosting raid buffs. Each opener contains 6 GCDs prior to Hypercharge. This is the only way to summon Queen in your opener without delaying Drill to 12.5 seconds.</p>
 <p>You’ll notice there’s a string of three Heated combo actions in a row. This is done on purpose for later on in an encounter. Those Heated combo actions can, and most likely will be, replaced with a Hypercharge window later on. This allows us to get more potency under raid buffs and potions and use Barrel Stabilizer on cooldown, prior to Wildfire windows.</p>
-<p><img src=/img/jobs/mch/compressed_mch_6.0_standard_opener_v1.1.png alt></p>
+<p>
+<div class=md__image>
+<img id="[222 412 311 155 312 118]" src=/img/jobs/mch/compressed_mch_6.0_standard_opener_v1.1.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>The three-string of combo actions are gone from this, replaced by a delayed Air Anchor instead. While there’s more of a risk of losing a usage of Air Anchor, this Multi-Tool alignment makes better use of raid buff heavy comps. There’s no room for Hypercharge, so if you plan on keeping Barrel Stabilizer on cooldown you’ll need to get rid of the heat prior to the burst window coming up.</p>
-<p><img src=/img/jobs/mch/compressed_mch_6.0_buff_opener_v1.1.png alt></p>
+<p>
+<div class=md__image>
+<img id="[468 62 472 295 221 191]" src=/img/jobs/mch/compressed_mch_6.0_buff_opener_v1.1.png onclick=openModal(this.id) alt>
+</div>
+</p>
 </div>
 </div>
 </div>
@@ -385,7 +393,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
