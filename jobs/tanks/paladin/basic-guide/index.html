@@ -2,6 +2,7 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=keywords content="Rotation,PaladinRotation,Opener,PaladinOpener">
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -11,14 +12,14 @@
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Paladin Basics Guide">
 <meta itemprop=description content="Welcome to the Basics Guide for Paladin! Whether you are a fresh level 90, a returning player, or just need a refresher, this guide will get you started and allow you to hit the ground running.
 Since this is a basic introduction to level 90 Paladin, this guide will not go into many nuances and topics that are tied to high-end optimization. If you are looking for such information, you may find it in one of the dedicated guides below:">
-<meta itemprop=dateModified content="2022-08-14T17:53:10+00:00">
-<meta itemprop=wordCount content="1864">
-<meta itemprop=keywords content><meta property="og:title" content="Paladin Basics Guide">
+<meta itemprop=dateModified content="2022-09-19T01:48:07+00:00">
+<meta itemprop=wordCount content="1901">
+<meta itemprop=keywords content="Rotation,PaladinRotation,Opener,PaladinOpener,"><meta property="og:title" content="Paladin Basics Guide">
 <meta property="og:description" content="Welcome to the Basics Guide for Paladin! Whether you are a fresh level 90, a returning player, or just need a refresher, this guide will get you started and allow you to hit the ground running.
 Since this is a basic introduction to level 90 Paladin, this guide will not go into many nuances and topics that are tied to high-end optimization. If you are looking for such information, you may find it in one of the dedicated guides below:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/tanks/paladin/basic-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2022-08-14T17:53:10+00:00">
+<meta property="article:modified_time" content="2022-09-19T01:48:07+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -303,8 +304,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 14 Aug, 2022</div>
-<div>Patch Applicable: 6.18</div>
+<div>Last Updated: 19 Sep, 2022</div>
+<div>Patch Applicable: 6.21</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -341,13 +342,13 @@ Newsfeed
 <p>Welcome to the Basics Guide for Paladin! Whether you are a fresh level 90, a returning player, or just need a refresher, this guide will get you started and allow you to hit the ground running.</p>
 <p>Since this is a basic introduction to level 90 Paladin, this guide will not go into many nuances and topics that are tied to high-end optimization. If you are looking for such information, you may find it in one of the dedicated guides below:</p>
 <ul>
-<li><a href=https://www.thebalanceffxiv.com/jobs/tanks/paladin/leveling-guide/>Leveling Guide</a></li>
+<li><a href=/jobs/tanks/paladin/leveling-guide/>Leveling Guide</a></li>
 <li><a href=/jobs/tanks/paladin/openers>Openers</a></li>
-<li>Advanced Guide (Coming Soon!)</li>
+<li>[Advanced Guide] (/jobs/tanks/paladin/advanced-guide/)</li>
 <li>Fight Tips (Coming Soon!)</li>
 <li>Stats and Materia (see <a href=/jobs/tanks/paladin>main page</a>)</li>
 <li><a href=/jobs/tanks/paladin/best-in-slot>Gearing</a></li>
-<li><a href=https://www.thebalanceffxiv.com/jobs/tanks/paladin/skills-overview/>Skill Overview</a></li>
+<li><a href=/jobs/tanks/paladin/skills-overview/>Skill Overview</a></li>
 <li><a href=/jobs/tanks/paladin/faq>Frequently Asked Questions</a></li>
 </ul>
 <hr>
@@ -361,53 +362,61 @@ Newsfeed
 <li>Keep off-Global Cooldowns (oGCDs) on cooldown. Damaging oGCDs should be used roughly as they come off cooldown, as long as using them does not delay your next GCD due to animation lock.</li>
 </ul>
 <h2 id=the-rotation>The Rotation</h2>
-<h3 id=basic-opener>Basic Opener</h3>
-<p>Goals for the opener include:</p>
-<ul>
-<li>Apply Goring Blade early</li>
-<li>Use damaging oGCDs inside tincture and raid buff windows. Most raid buffs will come out shortly before the 4th GCD).</li>
-</ul>
+<p>With Patch 6.2 gearing options and recent job changes, there are now two rotations for the job: a slow GCD rotation (for use if your GCD is 2.46 or higher), and a fast GCD rotation (for use if your GCD is 2.45 or faster). The new, slow GCD rotation loop is generally preferred, but sticking to the old, fast GCD rotation loop can be done for familiarity with a minor DPS loss.</p>
+<h3 id=slow-gcd-rotation-62>Slow GCD Rotation (6.2)</h3>
+<h4 id=paladin-opener>Paladin Opener</h4>
 <p>
 <div class=md__image>
-<img id="[187 290 255 251 487 387]" src=/img/jobs/pld/61-fullfof.png onclick=openModal(this.id) alt="Standard Opener for Paladin">
+<img id="[408 479 1 430 23 299]" src=https://cdn.discordapp.com/attachments/1009922395403976825/1019114452580307006/opener250.png onclick=openModal(this.id) alt="Slow GCD Opener for Paladin">
 </div>
 </p>
-<p><strong>Text version:</strong> prepull Holy Spirit at -2s > Fast Blade + late weave Fight or Flight > Riot Blade > Goring Blade > Fast Blade + Tincture > Riot Blade + Circle of Scorn + Intervene > Royal Authority + Expiacion + Requiescat > Atonement + Intervene > Atonement > Atonement > Fast Blade > Riot Blade > Goring Blade > Holy Spirit > Holy Spirit > Holy Spirit > Holy Spirit > Confiteor + Circle of Scorn > Blade of Faith + Expiacion > Blade of Truth > Blade of Valor
-<br>
-Full size: <a href=https://xiv.sleepyshiba.com/pld/img/61-fullfof.png>Full FoF Opener for Paladin</a></p>
+<p>The potion used is whatever the current tier&rsquo;s Strength potion is (as of patch 6.2, it is the Grade 7 Tincture of Strength).</p>
+<p>After the opener, go into the rotation loop (pictured and explained below) by doing a Royal Authority combo and using Fight or Flight after the Riot Blade.</p>
+<h4 id=paladin-rotation-loop>Paladin Rotation Loop</h4>
+<p>![Full Slow GCD Rotation Loop for Paladin][https://cdn.discordapp.com/attachments/1009922395403976825/1019114451439460472/loop250.png]</p>
+<p>The loop looks complicated, but essentially boils down to:</p>
+<ol>
+<li>Magic Phase (4x Holy Spirit, Confiteor, Blade of Valor combo)</li>
+<li>Royal Authority combo + 3x Atonement</li>
+<li>Goring Blade combo</li>
+<li>Royal Authority combo + 3x Atonement</li>
+<li><em>If Requiescat would not come up in time for the next GCD</em>, use a Goring Blade combo</li>
+<li>Repeat.</li>
+</ol>
+<p>If playing a speed faster than 2.50, you will occasionally need to hardcast a Holy Spirit. At 2.46 and 2.47, you can hardcast a Holy Spirit after every third Confiteor (the one after your unbuffed Goring Blade combo). At 2.48 and 2.49, this is also the ideal place to hardcast if the encounter lasts long enough for your Fight or Flight and Requiescat to start clipping your GCD.</p>
+<h3 id=fast-gcd-rotation-legacy>Fast GCD Rotation (Legacy)</h3>
+<h4 id=paladin-opener-1>Paladin Opener</h4>
 <p>
 <div class=md__image>
-<img id="[404 223 385 228 135 139]" src=https://xivapi.com/i/020000/020710_hr1.png onclick=openModal(this.id) alt>
+<img id="[458 239 294 133 223 87]" src=https://cdn.discordapp.com/attachments/1009922395403976825/1019114452261543986/opener18s.png onclick=openModal(this.id) alt="Fast GCD Opener for Paladin">
 </div>
 </p>
-<p>The potion used is whatever the current tier&rsquo;s Strength potion is (as of patch 6.18, it is the Grade 6 Tincture of Strength).</p>
+<p>
+<div class=md__image>
+<img id="[226 207 297 53 495 332]" src=https://xivapi.com/i/020000/020710_hr1.png onclick=openModal(this.id) alt>
+</div>
+</p>
+<p>The potion used is whatever the current tier&rsquo;s Strength potion is (as of patch 6.2, it is the Grade 7 Tincture of Strength).</p>
+<p>If a 20-second countdown for the encounter is not feasible, simply skip the pre-pull Fight or Flight and use it where it would normally come up during the rotation loop.</p>
 <p><strong>High Latency Adjustments:</strong><br>
 At high latency, if double weaves would cause your GCD to clip, move oGCDs around to stick to single-weaving.</p>
-<p><strong>Opener notes:</strong></p>
-<ul>
-<li>We pull with a precast Holy Spirit as a medium-potency GCD that only costs half a GCD (due to precasting). Pulling with Shield Lob would be less potency and starts the GCD rolling later, while pulling with Intervene moves an Intervene out of Fight or Flight.</li>
-<li>Since the Requiescat oGCD itself does damage, and the Requiescat buff lasts for a long time, we use Requiescat early in the opener to put it under raid buffs like Bard&rsquo;s Battle Voice or Dancer&rsquo;s Technical Finish.</li>
-</ul>
-<h3 id=rotation-loop>Rotation Loop</h3>
+<h4 id=paladin-rotation-loop-1>Paladin Rotation Loop</h4>
 <p>Following Blade of Valor, the Paladin rotation enters into a loop with three phases, with a short filler phase before repeating the Fight or Flight and Requiescat windows as in the opener.</p>
 <p>
 <div class=md__image>
-<img id="[371 166 340 468 124 188]" src=https://xiv.sleepyshiba.com/pld/img/loop.png onclick=openModal(this.id) alt="Paladin Rotation Loop">
+<img id="[346 18 345 322 443 102]" src=https://xiv.sleepyshiba.com/pld/img/loop.png onclick=openModal(this.id) alt="Paladin Rotation Loop">
 </div>
 </p>
-<p><strong>Text Version:</strong> Loop Start > Fast Blade > Riot Blade > Royal Authority > Atonement > Atonement > Fast Blade + late weave Fight or Flight > Riot Blade > Goring Blade > Fast Blade > Riot Blade > Royal Authority > Atonement > Atonement > Atonement > Fast Blade > Riot Blade > Goring Blade + Requiescat > Holy Spirit > Holy Spirit > Holy Spirit > Holy Spirit > Confiteor > Blade of Faith > Blade of Truth > Blade of Valor
-<br>
-Full size: <a href=https://xiv.sleepyshiba.com/pld/img/loop.png>Paladin Rotation Loop</a></p>
-<p>During the filler phase, only two out of three Atonements are used because the natural rotation is approximately 64 seconds long. Dropping a GCD minimizes the natural drift on the 60-second cooldown Fight or Flight, and Requiescat and is the best option in a vacuum.</p>
+<p>During the filler phase, only two out of three Atonements are used because the natural rotation would be approximately 64 seconds long. Dropping a GCD minimizes the natural drift on Fight or Flight, Requiescat, and other oGCDs and is the best option in a vacuum.</p>
 <p>Damaging oGCDs like Circle of Scorn and Expiacion should be used on cooldown, ideally with two charges of Intervene being pooled for Fight or Flight. Requiescat can be used any time after the 4th Fight or Flight GCD for the buff to last until Confiteor.</p>
-<h3 id=using-fight-or-flight>Using Fight or Flight</h3>
-<p>With a 25-second duration, at most common skill speeds, it is possible to fit 11 GCDs in the Fight or Flight buff window. In the standard rotation these GCDs will be Riot Blade, Goring Blade, a Royal Atonement combo and three Atonements, and another Goring Blade combo. The buff on Goring Blade&rsquo;s damage-over-time effect (DoT) will persist as long as Goring Blade itself was buffed by Fight or Flight.</p>
+<h4 id=weaving-fight-or-flight>Weaving Fight or Flight</h4>
+<p>With a 25-second duration, at fast GCD rotation skill speeds, it is possible to fit 11 GCDs in the Fight or Flight buff window. In the standard rotation these GCDs will be Riot Blade, Goring Blade, a Royal Atonement combo and three Atonements, and another Goring Blade combo. The buff on Goring Blade&rsquo;s damage-over-time effect (DoT) will persist as long as Goring Blade itself was buffed by Fight or Flight.</p>
 <p>
 <div class=md__image>
-<img id="[13 370 458 117 396 146]" src=https://xiv.sleepyshiba.com/pld/assets/fofgcd.png onclick=openModal(this.id) alt>
+<img id="[317 302 237 383 111 78]" src=https://xiv.sleepyshiba.com/pld/assets/fofgcd.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>In order to fit all 11 GCDs in the buff window, Fight or Flight must be weaved late in the GCD timer. The approximate timing is two-thirds of the way into the GCD after Fast Blade, though the timing may vary depending on your latency and Skill Speed. As long as the buff icon is on your buff bar when your last GCD is cast, then it was buffed. The in-game battle log and floating damage text are inaccurate for determining whether the last GCD was buffed or not.</p>
+<p>In order to fit all 11 GCDs in the buff window, Fight or Flight must be weaved late in the GCD timer. The approximate timing is two-thirds of the way into the GCD after Fast Blade, though the timing may vary depending on your latency and Skill Speed. As long as the buff icon was on your buff bar when your last GCD is cast, then it was buffed. The in-game battle log, animations, and floating damage text are inaccurate for determining whether the last GCD was buffed or not.</p>
 <p>Each Fight or Flight window should also contain one Circle of Scorn and one Expiacion. Using them roughly on cooldown should naturally line them up with Fight or Flight. Intervene is ideally pooled for two uses during Fight or Flight, but should be used to keep melee uptime if needed.</p>
 <h3 id=multiple-targets>Multiple Targets</h3>
 <ul>
@@ -419,49 +428,49 @@ Full size: <a href=https://xiv.sleepyshiba.com/pld/img/loop.png>Paladin Rotation
 <h2 id=notable-utility>Notable Utility</h2>
 <p>
 <div class=md__image>
-<img id="[219 432 251 243 118 13]" src=https://xiv.sleepyshiba.com/pld/assets/skill-divineveil.png onclick=openModal(this.id) alt="Divine Veil">
+<img id="[346 9 182 68 10 222]" src=https://xiv.sleepyshiba.com/pld/assets/skill-divineveil.png onclick=openModal(this.id) alt="Divine Veil">
 </div>
 </p>
 <p>Divine Veil provides a party-wide shield and heal (excluding yourself) after being procced by any healing GCD with an on-hit healing potency (e.g. Holy Spirit, Astrologian&rsquo;s Helios, Scholar fairy&rsquo;s Embrace, and not White Mage&rsquo;s Regen).</p>
 <p>
 <div class=md__image>
-<img id="[183 319 22 49 322 35]" src=https://xiv.sleepyshiba.com/pld/assets/skill-passageofarms.png onclick=openModal(this.id) alt="Passage of Arms">
+<img id="[326 347 379 330 473 59]" src=https://xiv.sleepyshiba.com/pld/assets/skill-passageofarms.png onclick=openModal(this.id) alt="Passage of Arms">
 </div>
 </p>
 <p>Passage of Arms applies a buff to all party members behind you, granting them a 15% reduction in damage taken. The buff lingers for five seconds after you cancel it, so the most common use case is flashing it onto the party before high raid-wide damage.</p>
 <p>
 <div class=md__image>
-<img id="[424 384 30 173 268 226]" src=https://xiv.sleepyshiba.com/pld/assets/skill-intervention.png onclick=openModal(this.id) alt=Intervention>
+<img id="[379 136 16 190 235 369]" src=https://xiv.sleepyshiba.com/pld/assets/skill-intervention.png onclick=openModal(this.id) alt=Intervention>
 </div>
 </p>
 <p>Intervention gives your target a buff that reduces damage taken, as well as provides a small regen effect. The damage reduction buff can be buffed by having either Rampart or Sentinel active when casting Intervention.</p>
 <p>
 <div class=md__image>
-<img id="[38 417 428 310 398 26]" src=https://xiv.sleepyshiba.com/pld/assets/skill-reprisal.png onclick=openModal(this.id) alt=Reprisal>
+<img id="[419 383 326 108 328 302]" src=https://xiv.sleepyshiba.com/pld/assets/skill-reprisal.png onclick=openModal(this.id) alt=Reprisal>
 </div>
 </p>
 <p>Reprisal reduces the damage dealt by all enemies around you. Generally use this on raid-wide damage.</p>
 <p>
 <div class=md__image>
-<img id="[230 147 160 436 27 383]" src=https://xiv.sleepyshiba.com/pld/assets/skill-holysheltron.png onclick=openModal(this.id) alt="Holy Sheltron">
+<img id="[52 490 295 375 422 325]" src=https://xiv.sleepyshiba.com/pld/assets/skill-holysheltron.png onclick=openModal(this.id) alt="Holy Sheltron">
 </div>
 <div class=md__image>
-<img id="[281 277 189 236 80 147]" src=https://xiv.sleepyshiba.com/pld/assets/skill-rampart.png onclick=openModal(this.id) alt=Rampart>
+<img id="[375 80 254 433 106 427]" src=https://xiv.sleepyshiba.com/pld/assets/skill-rampart.png onclick=openModal(this.id) alt=Rampart>
 </div>
 <div class=md__image>
-<img id="[186 450 406 293 328 308]" src=https://xiv.sleepyshiba.com/pld/assets/skill-sentinel.png onclick=openModal(this.id) alt=Sentinel>
+<img id="[145 4 431 257 374 300]" src=https://xiv.sleepyshiba.com/pld/assets/skill-sentinel.png onclick=openModal(this.id) alt=Sentinel>
 </div>
 <div class=md__image>
-<img id="[289 491 455 282 391 443]" src=https://xiv.sleepyshiba.com/pld/assets/skill-hallowedground.png onclick=openModal(this.id) alt="Hallowed Ground">
+<img id="[427 180 113 91 83 425]" src=https://xiv.sleepyshiba.com/pld/assets/skill-hallowedground.png onclick=openModal(this.id) alt="Hallowed Ground">
 </div>
 </p>
 <p>Use your other defensive cooldowns to reduce incoming damage and make life easier for your healers.</p>
 <p>
 <div class=md__image>
-<img id="[403 80 98 138 290 456]" src=https://xiv.sleepyshiba.com/pld/assets/skill-clemency.png onclick=openModal(this.id) alt=Clemency>
+<img id="[352 281 28 259 263 243]" src=https://xiv.sleepyshiba.com/pld/assets/skill-clemency.png onclick=openModal(this.id) alt=Clemency>
 </div>
 <div class=md__image>
-<img id="[349 231 230 128 461 429]" src=https://xiv.sleepyshiba.com/pld/assets/skill-cover.png onclick=openModal(this.id) alt=Cover>
+<img id="[157 421 40 340 230 196]" src=https://xiv.sleepyshiba.com/pld/assets/skill-cover.png onclick=openModal(this.id) alt=Cover>
 </div>
 </p>
 <p>These skills are very niche and infrequently used but have their time and place to shine. Clemency is a <em>significant</em> DPS loss but enables soloing dungeon bosses when the healer is dead, or saving runs when progging raids and trials. Cover can be used in niche optimization strategies or for saving a party member from otherwise lethal damage. Covered damage ignores Hallowed Ground.</p>
@@ -568,8 +577,8 @@ FFXIV macros do not queue, so hitting a macro while in animation lock from anoth
 </ul>
 <p><strong>Lowest Priority</strong></p>
 <h4 id=choosing-your-skill-speed>Choosing your skill speed</h4>
-<p>The Paladin rotation is functional at almost all skill speeds. The only requirement is a minimum level of skill speed in order to get 11 GCDs in Fight or Flight, which is possible at virtually any recast speed faster than 2.50 (more reasonably, anything less than 2.47). Common GCD speeds lie anywhere between 2.40 and 2.45.</p>
-<p>Outside of high-end optimization, choice of skill speed has little impact on the Paladin rotation, and can be chosen for comfort (faster speeds are more forgiving and latency-friendly for fitting 11 GCDs into Fight or Flight).</p>
+<p>The Paladin rotation is functional at almost all skill speeds. For the Fast GCD rotation, the only requirement is a minimum level of skill speed in order to get 11 GCDs in Fight or Flight, which is possible at virtually any recast speed faster than 2.50 (more reasonably, anything less than 2.47). Common Fast GCD speeds lie anywhere between 2.42 and 2.45. The Slow GCD rotation is a gain over the Fast GCD rotation at 2.46 and slower.</p>
+<p>Outside of high-end optimization, choice of skill speed has little impact on the Paladin rotation, and can be chosen for comfort. For high latency it is recommended to use the Slow GCD rotation with a slower GCD (like 2.50). Alternatively, you can use the Fast GCD rotation and go with a faster GCD (2.40) to compensate for your latency.</p>
 <p>In optimization, each encounter must be considered separately to determine how many GCDs are gained or lost by different skill speeds, as well as to line up the GCD with any melee disengages. In general, the slowest speed that doesn&rsquo;t lose any major GCDs within a phase will be the strongest choice.</p>
 </div>
 </div>
@@ -635,6 +644,10 @@ FFXIV macros do not queue, so hitting a macro while in animation lock from anoth
 <div class="tab-content meta-content">
 <div>26 Jul, 2022</div>
 <div>Updated opener graphics</div>
+</div>
+<div class="tab-content meta-content">
+<div>19 Sep, 2022</div>
+<div>Updated for 6.2</div>
 </div>
 </li>
 </ul>
