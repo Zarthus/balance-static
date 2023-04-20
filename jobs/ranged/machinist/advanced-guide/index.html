@@ -13,7 +13,7 @@
 <meta itemprop=description content="This guide is intended to give the reader the tools needed to approach encounter optimization as a Machinist. It assumes you are already familiar with the fundamentals of the job – if you need a refresher, please read the Basic Guide and come back when you&rsquo;re done.
 Introduction to Optimization This section will introduce some core concepts for optimizing encounters in FFXIV. If you are already familiar with optimization on other jobs, you can feel free to skip ahead!">
 <meta itemprop=dateModified content="2023-01-14T19:57:50+00:00">
-<meta itemprop=wordCount content="5312">
+<meta itemprop=wordCount content="5524">
 <meta itemprop=keywords content="Machinist,MCH,FFXIV,machinist rotation,machinist opener,machinist guide,"><meta property="og:title" content="Machinist Advanced Guide">
 <meta property="og:description" content="This guide is intended to give the reader the tools needed to approach encounter optimization as a Machinist. It assumes you are already familiar with the fundamentals of the job – if you need a refresher, please read the Basic Guide and come back when you&rsquo;re done.
 Introduction to Optimization This section will introduce some core concepts for optimizing encounters in FFXIV. If you are already familiar with optimization on other jobs, you can feel free to skip ahead!">
@@ -391,9 +391,11 @@ Newsfeed
 <li><a href=#graduate-studies-the-machinists-toolbelt>Graduate Studies: The Machinist&rsquo;s Toolbelt</a>
 <ul>
 <li><a href=#mid-hc-aoe-gcds>Mid-HC AoE GCDs</a></li>
+<li><a href=#10x-heatblast-burst>10x Heatblast burst</a></li>
 <li><a href=#ricochet-pooling>Ricochet Pooling</a></li>
 <li><a href=#flamethrower-buff-extension>Flamethrower Buff Extension</a></li>
 <li><a href=#tick-fishing>Tick Fishing</a></li>
+<li><a href=#queen-extension>Queen extension</a></li>
 </ul>
 </li>
 </ul>
@@ -563,21 +565,21 @@ on cooldown at the right time without interfering with your GCD rotation. Below 
 <h2 id=hc--wf>HC > WF</h2>
 <p>The standard and most ping-friendly <strong>Wildfire</strong> setup.
 <div class=md__image>
-<img id="[18 111 170 50 383 302]" src=https://i.imgur.com/mQrevVY.png onclick=openModal(this.id) alt="HC &amp;gt; WF">
+<img id="[106 423 68 166 110 296]" src=https://i.imgur.com/mQrevVY.png onclick=openModal(this.id) alt="HC &amp;gt; WF">
 </div>
 </p>
 <p>Clipping tolerance: <strong>1.7s</strong> (<strong>1.3s</strong> if you end on a tool GCD).</p>
 <h2 id=wf--gcd--hc>WF > GCD > HC</h2>
 <p>If you need to weave <strong>Wildfire</strong> before a tool GCD, use this setup.
 <div class=md__image>
-<img id="[319 473 456 261 491 450]" src=https://i.imgur.com/sjBViLP.png onclick=openModal(this.id) alt="WF &amp;gt; GCD &amp;gt; HC">
+<img id="[321 69 226 485 249 440]" src=https://i.imgur.com/sjBViLP.png onclick=openModal(this.id) alt="WF &amp;gt; GCD &amp;gt; HC">
 </div>
 </p>
 <p>Clipping tolerance: <strong>0.7s</strong>.</p>
 <h2 id=hc--hb--wf>HC > HB > WF</h2>
 <p>This setup exists in case you need to drift <strong>Wildfire</strong> back.
 <div class=md__image>
-<img id="[82 426 199 476 243 477]" src=https://i.imgur.com/j2KijBX.png onclick=openModal(this.id) alt="HC &amp;gt; HB &amp;gt; WF">
+<img id="[123 201 203 465 237 204]" src=https://i.imgur.com/j2KijBX.png onclick=openModal(this.id) alt="HC &amp;gt; HB &amp;gt; WF">
 </div>
 </p>
 <p>Clipping tolerance: <strong>0.7s</strong> (<strong>0.3s</strong> if you need to end on a tool GCD).</p>
@@ -621,20 +623,20 @@ See the fast opener below.</p>
 <h2 id=example-openers>Example Openers</h2>
 <p>There are dozens of viable ways to get things on cooldown as a Machinist. Below are a couple very different variations
 which you may find useful (feel free to rearrange the order of the tool GCDs as needed):</p>
-<h3 id=delayed-tools>Delayed Tools</h3>
+<h3 id=123-tools>123 Tools</h3>
 <p>In situations where you can safely drift all three tools without losing any uses, this variant is great for
-maximizing buff alignment.</p>
+maximizing buff alignment. This opener also allows you to the 10x Heatblast burst mentioned further down the guide. This is good for full uptime fights where you use tinctures on the 2nd and 8th minute.</p>
 <p>
 <div class=md__image>
-<img id="[168 267 19 467 290 132]" src=https://i.imgur.com/x0Ah7a2.png onclick=openModal(this.id) alt="Delayed Tools" title="Delayed Tools">
+<img id="[290 216 129 311 314 480]" src=/img/jobs/mch/mch-123-ew-opener.png onclick=openModal(this.id) alt="123 Tools" title="123 Tools">
 </div>
 </p>
-<h3 id=fast>Fast</h3>
+<h3 id=fast-wildfire>Fast Wildfire</h3>
 <p>On the other end of the spectrum, you might face a situation where you need to get everything on cooldown ASAP.
 This variant uses Drill last to enable double <strong>Hypercharge</strong> windows in between <strong>Drill</strong> casts.</p>
 <p>
 <div class=md__image>
-<img id="[23 170 421 450 63 183]" src=https://i.imgur.com/Hg0WVeE.png onclick=openModal(this.id) alt="Fast Opener" title="Fast Opener">
+<img id="[134 95 12 238 88 116]" src=https://i.imgur.com/Hg0WVeE.png onclick=openModal(this.id) alt="Fast Opener" title="Fast Opener">
 </div>
 </p>
 <h1 id=tinctures>Tinctures</h1>
@@ -952,12 +954,12 @@ DH rate = 35.4%
 crit buffs = 0%
 DH buffs = 0%
 
-Drill ePotency = 600 * (1 + (crit modifier - 1) * crit rate) * (1 + (0.25 * DH rate))
-Drill ePotency = 600 * (1 + (1.581 - 1) * 0.231) * (1 + (0.25 * 0.354))
+Drill ePotency = 600  *(1 + (crit modifier - 1)*  crit rate)  *(1 + (0.25*  DH rate))
+Drill ePotency = 600  *(1 + (1.581 - 1)*  0.231)  *(1 + (0.25*  0.354))
 Drill ePotency = 740.7p
 
-Reassembled Drill ePotency = 600 * 1.25 * crit modifier * (1 + (buff crit rate * (crit modifier - 1)) * (1 + ((DH rate + buff DH rate) * 0.25))
-Reassembled Drill ePotency = 600 * 1.25 * 1.581 * (1 + (0 * (1.581 - 1))) * (1 + ((0.354 + 0) * 0.25))
+Reassembled Drill ePotency = 600  *1.25*  crit modifier  *(1 + (buff crit rate*  (crit modifier - 1))  *(1 + ((DH rate + buff DH rate)*  0.25))
+Reassembled Drill ePotency = 600  *1.25*  1.581  *(1 + (0*  (1.581 - 1)))  *(1 + ((0.354 + 0)*  0.25))
 Reassembled Drill ePotency = 1290.7p
 </code>
   </pre>
@@ -1004,6 +1006,10 @@ used on single targets, you may find situations where this tech is useful. For e
 <li>You need an extra weave slot to get off all charges of <strong>Ricochet</strong> and <strong>Gauss Round</strong> during burst. In this case you can pull <strong>Chain Saw</strong> into your <strong>Hypercharge</strong> window (e.g. use it on the 4th GCD in your opener) and now you&rsquo;ve got an extra weave slot.</li>
 </ul>
 <p>Note that you will need to micro-drift your <strong>Chain Saw</strong> cooldown because it does not evenly align with 1.5s recast GCDs.</p>
+<h2 id=10x-heatblast-burst>10x Heatblast burst</h2>
+<p>Utilizing the previously mentioned fact that <strong>Chain Saw</strong> does not consume a <strong>Hypercharge</strong> stack, we can setup our burst windows to use 10 <strong>Heat Blasts</strong> in a row. This is a gain for burst windows where you use your <strong>tincture</strong>.</p>
+<p>The burst goes like so: (Tincture) AA Drill (Late weave HC) CS (Late weave WF) HBx5 (HC) HBx5 Drill</p>
+<p>This burst can only be achieved if you use your tools in that sequence as <strong>Drill</strong> drifts if you use it earlier, and you require <strong>Chain Saw</strong> to be the last GCD before entering the burst. The 123 Tools opener makes this possible in full uptime encounters.</p>
 <h2 id=ricochet-pooling>Ricochet Pooling</h2>
 <p>If an AoE situation is coming up in the fight, you can pool your <strong>Ricochet</strong> charges to take advantage
 of their cleave damage. Maybe this is obvious to you or maybe you&rsquo;ve never thought about it until now,
@@ -1013,7 +1019,7 @@ the enemies will need to be stacked quite close to each other to take advantage 
 <h2 id=flamethrower-buff-extension>Flamethrower Buff Extension</h2>
 <p>Another AoE tech, this time involving everyone&rsquo;s favorite Machinist action. <strong>Flamethrower</strong> functions like other ground DoTs:
 it snapshots buffs on the player at the time of casting the action (although it doesn&rsquo;t snapshot debuffs on the target, such as
-<strong>Chain Stratagem</strong>). This means <strong>if you start channeling <strong>Flamethrower</strong> on the last GCD of buffs, they&rsquo;ll last for the full
+<strong>Chain Stratagem</strong>). This means <strong>if you start channeling</strong> Flamethrower <strong>on the last GCD of buffs, they&rsquo;ll last for the full
 duration</strong>. This only requires a modest 1.13x buff multiplier for <strong>Flamethrower</strong> to edge out Heated Combo on two targets,
 and of course it&rsquo;s an even bigger gain on three or more targets.</p>
 <h2 id=tick-fishing>Tick Fishing</h2>
@@ -1021,6 +1027,8 @@ and of course it&rsquo;s an even bigger gain on three or more targets.</p>
 completeness. If you begin channeling <strong>Flamethrower</strong> during downtime where a boss is untargetable, you can potentially
 land a tick on the boss right as it returns without costing any GCD time. Just remember to <strong>begin channeling at least
 2.5 seconds before the boss is targetable</strong> so that <strong>Flamethrower</strong> doesn&rsquo;t clip your GCD.</p>
+<h2 id=queen-extension>Queen extension</h2>
+<p>As we know, <strong>Automaton Queen</strong> always uses 5 GCDs before the <strong>Pile Bunker</strong> and <strong>Crowned Collider</strong> finishers. These 5 GCDs can be filled with <strong>Arm Punch</strong>es and <strong>Roller Dash</strong>es. The former taking up one GCD slot, and the latter two for double the damage. You can force <strong>Automaton Queen</strong> to use a <strong>Roller Dash</strong> on her 5th GCD. This effectively gives her 6 GCDs worth of damage. To do this, have your tank pull the boss away from <strong>Automaton Queen</strong>&rsquo;s melee range between her 4th and 5th GCD.</p>
 </div>
 </div>
 </div>
@@ -1063,6 +1071,13 @@ land a tick on the boss right as it returns without costing any GCD time. Just r
 </div>
 <div class="text-center text-gray-light">Hint</div>
 <div class="text-center text-gray-light">Hint#7077</div>
+</div>
+<div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+<div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+<img class="w-full h-full object-cover" src=/img/profile/julia.png>
+</div>
+<div class="text-center text-gray-light">Juliacare</div>
+<div class="text-center text-gray-light">Julia#1337</div>
 </div>
 <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
